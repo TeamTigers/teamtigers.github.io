@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Aos scroll effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -44,8 +46,8 @@
                 <a class="hover-underline-animation" href="#why_us">Why us</a>
               </li>
               <li>
-                <a class="hover-underline-animation" href="#how_we_work"
-                  >How we work</a
+                <a class="hover-underline-animation" href="#projects"
+                  >Projects</a
                 >
               </li>
             </ul>
@@ -67,7 +69,11 @@
         <div class="section">
           <div id="home">
             <div class="row">
-              <div class="col s12 m6 l6 banner-section">
+              <div
+                class="col s12 m6 l6 banner-section"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <h1 class="banner-header">Your next Trust</h1>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -215,7 +221,11 @@
                 </div>
               </div>
 
-              <div class="col s12 m6 l6">
+              <div
+                class="col s12 m6 l6"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <h2 class="sub-header">Our services</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
@@ -233,7 +243,11 @@
         <div class="section">
           <div id="why_us">
             <div class="row">
-              <div class="col s12 m6 l6">
+              <div
+                class="col s12 m6 l6"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <h2>Why us?</h2>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -254,6 +268,7 @@
         </div>
         <!-- WHY US SECTION ENDS -->
 
+        <!-- PROJECT SECTION STARTS -->
         <div class="section">
           <div id="projects">
             <h2>Projects</h2>
@@ -280,6 +295,12 @@
                       href="https://teamtigers.github.io/coronainfobd"
                       target="_blank"
                       ><i class="material-icons right">launch</i>Live Demo</a
+                    >
+                    <a
+                      class="secondary-link"
+                      href="https://github.com/TeamTigers/coronainfobd"
+                      target="_blank"
+                      >Github repo</a
                     >
                   </div>
                 </div>
@@ -308,8 +329,58 @@
                       target="_blank"
                       ><i class="material-icons right">launch</i>Live Demo</a
                     >
+                    <a
+                      class="secondary-link"
+                      href="https://github.com/TeamTigers/bdCovidMap"
+                      target="_blank"
+                      >Github repo</a
+                    >
                   </div>
                 </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card rounded z-depth-3">
+                  <div class="card-image">
+                    <img
+                      src="assets/img/projects/retone.png"
+                      alt="retone"
+                      class="responsive-img"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">ReTone</span>
+                    <p class="description">
+                      ReTone is a color palette site built with React and React
+                      router. There is already a bunch of palettes available in
+                      the site. One can copy the color from the palette and
+                      create new custom color palette.
+                    </p>
+                    <br />
+                    <a
+                      class="waves-effect btn btn-small"
+                      href="https://re-tone.herokuapp.com/"
+                      target="_blank"
+                      ><i class="material-icons right">launch</i>Live Demo</a
+                    >
+                    <a
+                      class="secondary-link"
+                      href="https://github.com/TeamTigers/re-tone"
+                      target="_blank"
+                      >Github repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="center-align">
+                <a
+                  class="waves-effect waves-light btn more-btn"
+                  href="https://github.com/TeamTigers"
+                  target="_blank"
+                  >Discover more</a
+                >
               </div>
             </div>
           </div>
@@ -321,6 +392,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Materialize js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Aos scroll effect -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Plugin -->
     <script src="assets/js/plugin.js"></script>
   </body>

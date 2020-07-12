@@ -41,7 +41,11 @@ nav {
   margin-right: 4rem;
 }
 .section {
-  height: 90vh;
+  height: 85vh;
+}
+h1,
+h2 {
+  font-family: "Google Sans";
 }
 
 // Banner section
@@ -61,10 +65,23 @@ nav {
     margin-top: 1.5rem;
   }
 }
+
 .btn {
   text-transform: none;
   background-color: $blackColor !important;
   border-radius: 5px;
+}
+.more-btn {
+  height: 3rem;
+  width: 10rem;
+  line-height: 3;
+}
+.secondary-link {
+  margin-left: 1rem;
+  text-transform: none;
+  background-color: $whiteColor !important;
+  color: $blackColor;
+  border-bottom: 2px solid black;
 }
 .description {
   color: $darkGray;

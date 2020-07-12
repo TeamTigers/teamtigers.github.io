@@ -32,7 +32,12 @@ nav ul a {
 }
 
 .section {
-  height: 90vh;
+  height: 85vh;
+}
+
+h1,
+h2 {
+  font-family: "Google Sans";
 }
 
 .banner-section {
@@ -56,6 +61,20 @@ nav ul a {
   text-transform: none;
   background-color: #040404 !important;
   border-radius: 5px;
+}
+
+.more-btn {
+  height: 3rem;
+  width: 10rem;
+  line-height: 3;
+}
+
+.secondary-link {
+  margin-left: 1rem;
+  text-transform: none;
+  background-color: #ffffff !important;
+  color: #040404;
+  border-bottom: 2px solid black;
 }
 
 .description {
