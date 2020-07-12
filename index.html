@@ -1,722 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamTigers</title>
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans"
+    />
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/css/materializecss.min.css" />
+    <!-- Materialize css -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <div class="navbar-fixed">
+        <nav class="nav-extended white z-depth-0">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">TeamTigers</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons black-text">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a class="active hover-underline-animation" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="hover-underline-animation" href="#services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="hover-underline-animation" href="#why_us">Why us</a>
+              </li>
+              <li>
+                <a class="hover-underline-animation" href="#how_we_work"
+                  >How we work</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/jpg" href="assets/img/teamtigers.jpg">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">Mobile</a></li>
+      </ul>
+    </header>
 
-    <title>Home | Team Tigers </title>
-
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="https://teamtigers-it.github.io/index.html" />
-
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/rubick.css" rel="stylesheet" />
-
-    <!--     Fonts and icons     -->
-    <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Contrail One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-    <link href="assets/css/fonts/Rubik-Fonts.css" rel="stylesheet" />
-    <link href="assets/css/font.css" rel="stylesheet" />
-    <link href="assets/css/vertical-nav.css" rel="stylesheet" />
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-    </script>
-    <!-- End Google Tag Manager -->
-</head>
-
-<body class="landing-page">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
-        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
-
-        <div class="container">
-            <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-        </button>
-                <span class="navbar-brand" style="font-family: 'Courier New', Courier, monospace">
-           Team Tigers
-                </span>
+    <main>
+      <div class="customContainer">
+        <!-- HOME SECTION START -->
+        <div id="home">
+          <div class="row">
+            <div class="col s12 m6 l6 banner-section">
+              <h1 class="banner-header">Your next Trust</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+                velit, eum nemo vel laboriosam repellendus! Quaerat corporis a
+                debitis excepturi nulla, ipsum neque molestias esse, ea non,
+                iste vel cumque.
+              </p>
             </div>
+            <div class="col s12 m6 l6">
+              <img
+                id="banner-svg"
+                src="assets/img/svg/banner.svg"
+                alt="banner"
+                class="responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- HOME SECTION END -->
 
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right navbar-uppercase">
-                    <li class="social-links">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/teamtigersit">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="nav-link" rel="tooltip" title="Star us on Github" data-placement="bottom" href="https://github.com/TeamTigers-IT">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/teamtigers256">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://www.twitter.com/teamtigers256">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                    Home
-                </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">
-                    Blog
-                </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                    About Us
-                </a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">
-                    Portfolio
-                </a>
-                    </li>
-                    <li>
-                        <a href="ui-design.html">
-                    UI Design
-                </a>
-                    </li>
-                    <li>
-                        <a href="photography.html">
-                            Gallery
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact-us.html">
-                        Contact Us
-                    </a>
-                    </li>
+        <!-- SERVICE SECTION START -->
+        <div id="services">
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <div class="col s12 center">
+                <ul class="tabs">
+                  <li class="tab"><a class="active" href="#web">Web</a></li>
+                  <li class="tab">
+                    <a href="#mobile">Mobile</a>
+                  </li>
+                  <li class="tab">
+                    <a href="#ui">UI/UX</a>
+                  </li>
+                  <li class="tab">
+                    <a href="#api">API</a>
+                  </li>
                 </ul>
+              </div>
+
+              <!-- Web services -->
+              <div id="web" class="col s12">
+                <div class="col s12">
+                  <div class="card horizontal rounded z-depth-3">
+                    <div class="card-image">
+                      <img
+                        src="assets/img/svg/web.svg"
+                        alt="web"
+                        class="responsive-img tab-img"
+                      />
+                    </div>
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Necessitatibus saepe harum incidunt mollitia
+                        reiciendis! Et accusamus ullam vitae earum
+                        exercitationem inventore in illum, suscipit nam
+                        perferendis dolorum provident rem quidem.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile services -->
+              <div id="mobile" class="col s12">
+                <div class="col s12">
+                  <div class="card horizontal rounded z-depth-3">
+                    <div class="card-image">
+                      <img
+                        src="assets/img/svg/mobile.svg"
+                        alt="mobile"
+                        class="responsive-img tab-img"
+                      />
+                    </div>
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Necessitatibus saepe harum incidunt mollitia
+                        reiciendis! Et accusamus ullam vitae earum
+                        exercitationem inventore in illum, suscipit nam
+                        perferendis dolorum provident rem quidem.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UI services -->
+              <div id="ui" class="col s12">
+                <div class="col s12">
+                  <div class="card horizontal rounded z-depth-3">
+                    <div class="card-image">
+                      <img
+                        src="assets/img/svg/ui.svg"
+                        alt="ui"
+                        class="responsive-img tab-img"
+                      />
+                    </div>
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Necessitatibus saepe harum incidunt mollitia
+                        reiciendis! Et accusamus ullam vitae earum
+                        exercitationem inventore in illum, suscipit nam
+                        perferendis dolorum provident rem quidem.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- API services -->
+              <div id="api" class="col s12">
+                <div class="col s12">
+                  <div class="card horizontal rounded z-depth-3">
+                    <div class="card-image">
+                      <img
+                        src="assets/img/svg/api.svg"
+                        alt="api"
+                        class="responsive-img tab-img"
+                      />
+                    </div>
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Necessitatibus saepe harum incidunt mollitia
+                        reiciendis! Et accusamus ullam vitae earum
+                        exercitationem inventore in illum, suscipit nam
+                        perferendis dolorum provident rem quidem.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- /.navbar-collapse -->
+
+            <div class="col s12 m6 l6">
+              <h2 class="sub-header">Our services</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                est iste ducimus, aliquam aut ex hic suscipit molestiae id eum
+                quibusdam quam a, maiores quas quos debitis commodi, repellat
+                voluptas.
+              </p>
+            </div>
+          </div>
         </div>
-    </nav>
+        <!-- SERVICE SECTION END -->
+      </div>
+    </main>
 
-
-    <!--front page-->
-    <div class="wrapper">
-        <div class="section section-header">
-            <div class="parallax pattern-image filter filter-color-black">
-                <img src="assets/img/wall1.jpg" responsive-src="assets/img/wall1.jpg" />
-
-                <div class="container">
-                    <div class="content">
-
-                        <p>
-                            <div class="brand">
-                                <h2 style="font-family: 'Autour One'; font-size: 3em;">Oxytocin</h2>
-                            </div>
-                            <div class="separator-container">
-                                <div class="separator line-separator">✻</div>
-                            </div>
-                            <div style="text-align: center; padding-top:2em;"></div>
-
-                            <h3 style=" font-family: 'Amita'; color:rgb(255, 255, 255); "> We are
-                                <a href="" style=" font-family: 'Amita'; color:rgb(246, 250, 4); " class="typewrite" data-period="500" data-type='[ "Young.", "Strong.", "Dedicated."]'>
-                                    <span class="wrap"></span>
-                                </a>
-                            </h3>
-
-                    </div>
-                </div>
-            </div>
-            <a href="" data-scroll="true" data-id="#WhoWeAre" class="scroll-arrow hidden-xs hidden-sm">
-                <i class="fa fa-angle-down"></i>
-            </a>
-        </div>
-
-        <!-- SECTION WHO WE ARE -->
-
-
-        <div class="section section-we-are-1" id="WhoWeAre">
-            <div class="text-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="title add-animation-stopped">
-                            <h2 style=" font-family: 'Contrail One'; font-weight: 100;">We will make your dream come true</h2>
-                            <div class="separator-container">
-                                <div class="separator line-separator">✻</div>
-                            </div>
-                            <p>Our team is a group of individuals looking to create amazing pieces of work. Our motto is to bring elegant & new tastes of UI, faster performance system. We will try our best to give you a better output.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section section-we-do-1" id="WhatWeDo">
-            <div class="text-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="title add-animation-stopped">
-                            <h2 style=" font-family: 'Contrail One'; font-weight: 100;">What we do</h2>
-                            <div class="separator-container">
-                                <div class="separator line-separator">✻</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="card add-animation-stopped animation-1">
-                                        <div class="icon">
-                                            <i class="material-icons" style="font-size: 60px; color:rgb(248, 135, 107);">content_cut</i>
-                                        </div>
-                                        <h3>Web Development</h3><br>
-                                        <p>We try our best to provide a better and well developed web site as our clients want.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card add-animation-stopped animation-2">
-                                        <div class="icon">
-                                            <i class="material-icons" style="font-size: 60px; color: rgb(248, 135, 107);">color_lens</i>
-                                        </div>
-                                        <h3>Interactive Design</h3><br>
-                                        <p>We love making the web a better place and we love good reasons for adding to it. So join us and we will make history.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card add-animation-stopped animation-3">
-                                        <div class="icon">
-                                            <i class="material-icons" style="font-size: 60px; color:rgb(248, 135, 107);">computer</i>
-                                        </div>
-                                        <h3>Desktop Application</h3><br>
-                                        <p>We love to make desktop application using Java Graphical User Interface (GUI). For this we use SWING and Java FX. </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card add-animation-stopped animation-3">
-                                        <div class="icon">
-                                            <i class="material-icons" style="font-size: 60px; color:rgb(248, 135, 107);">format_paint</i>
-                                        </div>
-                                        <h3>Web Template</h3><br>
-                                        <p>We love to make UI designes according to our clients aptitude.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--our project section-->
-
-        <div class="section section-we-made-1 section-with-hover" id="projects">
-            <div class="text-area">
-                <div class="title add-animation-stopped">
-                    <h2 style=" font-family: 'Contrail One'; font-weight: 100;">Our Projects</h2>
-                    <div class="separator-container">
-                        <div class="separator line-separator">✻</div>
-                    </div>
-                    <p>We have created multiple projects using Java Graphical User Interface (GUI). Aside GUI we have also created a web project which is currrently in use. </p>
-                </div>
-            </div>
-            <div class="row" id="projectsLine1">
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-3">
-                        <img alt="..." src="assets/img/homepage.png" />
-                        <a class="over-area color-3" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_7">
-                            <div class="content">
-                                <label class="label label-info label-fill">Web Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Project Onusondhan</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-1">
-                        <img alt="..." src="assets/img/textile.jpg" />
-                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_1">
-                            <div class="content">
-                                <label class="label label-warning label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Textile Industry Management System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-2">
-                        <img alt="..." src="assets/img/icecream.jpeg" />
-                        <a class="over-area color-1" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_2">
-                            <div class="content">
-                                <label class="label label-danger label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Icecream Parlor Management System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-3">
-                        <img alt="..." src="assets/img/hospital.jpg" />
-                        <a class="over-area color-4 " href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_3">
-                            <div class="content">
-                                <label class="label label-primary label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Hospital Management System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-1">
-                        <img alt="..." src="assets/img/atm.jpg" />
-                        <a class="over-area color-4" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_4">
-                            <div class="content">
-                                <label class="label label-info label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">ATM Banking System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-2">
-                        <img alt="..." src="assets/img/fish.png" />
-                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_5">
-                            <div class="content">
-                                <label class="label label-warning label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Food Export Import Management System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="project add-animation-stopped animation-2">
-                        <img alt="..." src="assets/img/phone.jpg" />
-                        <a class="over-area color-2" href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_6">
-                            <div class="content">
-                                <label class="label label-primary label-fill">Desktop Application</label>
-                                <h5 style="font-family: Andale Mono, monospace;">Phone Book System</h5>
-                                <p style="font-family: 'Courier New', Courier, monospace">Click to open project content</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--modal of projects-->
-
-
-        <div class="project-content" id="project_1">
-            <div>
-                <div class="project-details">
-                    <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                    <div class="container">
-                        <div class="project-title">
-                            <h2>Textile Industry Management System</h2>
-                            <div class="title">Developer
-                                <h5></h5><b style="color: rgb(212, 155, 41);">Shunjid Rahman Showrov</b></h5><br>
-                            </div>
-
-                            <div class="separator-container">
-                                <div class="separator line-separator">✻</div>
-                            </div>
-                            <a href="https://github.com/showrov-swe/Textile_Industry_Management_System" style="color: rgb(15, 214, 164)">Project Demo</a>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="project-text text-right">
-                                    <p>This project has been developed for the textile garments industry of Bangladesh.</p>
-                                    <p> Around 80% of foreign income of Bangladesh comes from textile industries.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="project-image">
-                                    <img src="assets/img/background.png" />
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="project-text ">
-                                    <p>This software system can be very helpuful for the textile industries leading to the economic progress of Bangladesh.</p>
-                                    <p>So, the information and calculation of the textile industries needed to be brought under a system.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="project-content" id="project_2">
-            <div>
-                <div class="project-details">
-                    <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                    <div class="container">
-                        <div class="project-title">
-                            <h2>Icecream Management System</h2>
-                            <div class="title">Developer
-                                <h5></h5><b style="color: rgb(212, 155, 41);">Zubayer Alam Himel</b></h5>
-                            </div>
-                            <div class="separator-container">
-                                <div class="separator line-separator">✻</div>
-                            </div>
-                            <a href="https://github.com/phantomhimel/Icecream-Parlor" style="color: rgb(15, 214, 164)">Project Demo</a>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="project-text text-right">
-                                    <p>This project has been developed for any kind of icecream shop, where all information will be stored. </p>
-                                    <p>Information like icecream like flavor name, price, staff info will be stored.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="project-image">
-                                    <img src="assets/img/background.png" />
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="project-text">
-                                    <p>Staff will sell icecream and admin can view the details.</p>
-                                    <p>This software system can be very helpuful for the any kind of Icecream Parlour.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="project-content" id="project_3">
-        <div>
-            <div class="project-details">
-                <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                <div class="container">
-                    <div class="project-title">
-                        <h2>Hospital Management System</h2>
-                        <div class="title">Developer
-                            <h5></h5><b style="color: rgb(212, 155, 41);">Sheble Redwan</b></h5>
-                        </div>
-                        <div class="separator-container">
-                            <div class="separator line-separator">✻</div>
-                        </div>
-                        <a href="https://github.com/ShebleRedwan/java-gui-project" style="color: rgb(15, 214, 164)">Project Demo</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="project-text text-right">
-                                <p>In this system we can control a hospital system from the admission side of patient which patient admit under which doctor.</p>
-                                <p> Admin can see the registered doctor and patient and the doctor can see the patients who are admitted in his serial. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-image">
-                                <img src="assets/img/background.png" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-text">
-                                <p> patients have an option that is the next visiting date which has been given by the doctor.</p>
-                                <p>In future I will add more features that can manage of a hole hospital system.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="project-content" id="project_4">
-        <div>
-            <div class="project-details">
-                <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                <div class="container">
-                    <div class="project-title">
-                        <h2>ATM Banking System</h2>
-                        <div class="title">Developer
-                            <h5></h5><b style="color: rgb(212, 155, 41);">Anindo Shahriar</b></h5>
-                        </div>
-                        <div class="separator-container">
-                            <div class="separator line-separator">✻</div>
-                        </div>
-                        <a href="https://github.com/Anindo2008/JAVA-GUI-PROJECT" style="color: rgb(15, 214, 164)">Project Demo</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="project-text text-right">
-                                <p>ATM BANKING user creates an account and a userID is automatically generated.</p>
-                                <p>User can login account, deposits money, withdraw money </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-image">
-                                <img src="assets/img/background.png" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-text">
-                                <p>If enough money is not left in account to withdraw then the system will show it to the account holder.</p>
-                                <p>User can view his / her current amount of money.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="project-content" id="project_5">
-        <div>
-            <div class="project-details">
-                <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                <div class="container">
-                    <div class="project-title">
-                        <h2>Fish Export Import Management System</h2>
-                        <div class="title">Developer
-                            <h5></h5><b style="color: rgb(212, 155, 41);">Shah Fahad Hossain</b></h5>
-                        </div>
-                        <div class="separator-container">
-                            <div class="separator line-separator">✻</div>
-                        </div>
-                        <a href="https://github.com/fahad1997/Fish-Import-And-Export-Information-System" style="color: rgb(15, 214, 164)">Project Demo</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="project-text text-right">
-                                <p>This app basically is used for the fish export import companies.</p>
-                                <p>By using this application fish export import companies can mange their all informations.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-image">
-                                <img src="assets/img/background.png" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-text">
-                                <p></p>
-                                <p>User can view his / her current amount of money.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="project-content" id="project_6">
-        <div>
-            <div class="project-details">
-                <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                <div class="container">
-                    <div class="project-title">
-                        <h2>Phone Book System</h2>
-                        <div class="title">Developer
-                            <h5></h5><b style="color: rgb(212, 155, 41);">Zihadul Islam</b></h5>
-                        </div>
-                        <div class="separator-container">
-                            <div class="separator line-separator">✻</div>
-                        </div>
-                        <a href="https://github.com/Anindo2008/JAVA-GUI-PROJECT" style="color: rgb(15, 214, 164)">Project Demo</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="project-text text-right">
-                                <p>This app is developed for storing cantact number, and basic address of a person.</p>
-                                <p>Multiple user can store contact number and information.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-image">
-                                <img src="assets/img/background.png" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-text">
-                                <p>As it is a desktop application can access more than one person so every person should have a user name and password.</p>
-                                <p>After successfull login a user can view , delete or add his contact information.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="project-content" id="project_7">
-        <div>
-            <div class="project-details">
-                <span class="icon-close"><i class="material-icons">highlight_off</i></span>
-                <div class="container">
-                    <div class="project-title">
-                        <h2>Project Onusondhan</h2>
-                        <div class="title">Developers
-                            <h5></h5><b style="color: rgb(212, 155, 41);">Showrov, Himel, Fahad</b></h5>
-                        </div>
-                        <div class="separator-container">
-                            <div class="separator line-separator">✻</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="project-text text-right">
-                                <p> This project mainly developed to generate the semester routine of Daffodil International University. </p>
-                                <p>Students and teachers can find their individual routine from here.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-image">
-                                <img src="assets/img/background.png" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project-text">
-                                <p> The another part of the project is to find bug of the teacher and students for each routine version.</p>
-                                <p> This part can only be seen by the administrator.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- End Section "Contact" example 4: Address & Maps -->
-    <!-- END SECTION CONTACT -->
-
-    <!-- FOOTER -->
-
-    <footer class="footer footer-color-black " data-color="black ">
-        <div class="container ">
-            <div class="social-area pull-right ">
-                <a class="btn btn-social btn-facebook btn-simple " href="https://www.facebook.com/teamtigers256">
-                    <i class="fa fa-facebook-square "></i>
-                </a>
-                <a class="btn btn-social btn-twitter btn-simple " href="https://twitter.com/teamtigers256">
-                    <i class="fa fa-twitter "></i>
-                </a>
-                <a class="btn btn-social btn-pinterest btn-simple " href="https://www.instagram.com/teamtigers256">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a class="btn btn-social btn-pinterest btn-simple " href="https://github.com/TeamTigers-IT">
-                    <i class="fa fa-github"></i>
-                </a>
-            </div>
-            <div class="copyright" style="margin-left: 10%;">
-                Copyright &copy;
-                <script data-cfasync="false " src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js "></script>
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> TeamTigers, made with love
-            </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
-    </div>
-
-    </div>
-    <!-- end wrapper -->
-
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <!--    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>-->
-
-
-    <!--vertical nav to scroll up and down-->
-
-    <nav id="cd-vertical-nav">
-        <ul>
-            <li>
-                <a href="#WhoWeAre" data-number="1">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Our motto</span>
-                </a>
-            </li>
-            <li>
-                <a href="#WhatWeDo" data-number="2">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">What we do</span>
-                </a>
-            </li>
-            <li>
-                <a href="#projects" data-number="3">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Projects</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-
-
-
-</body>
-<!--   core js files    -->
-<script src="assets/js/scrollToTop.js" type="text/javascript"></script>
-<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
-
-
-<!--   file for adding vertical points where we activate the elements animation   -->
-<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
-
-<!--  js library for devices recognition -->
-<script type="text/javascript" src="assets/js/modernizr.js"></script>
-
-<!--   file where we handle all the script from the Rubik page   -->
-<script type="text/javascript" src="assets/js/rubick.js"></script>
-<script type="text/javascript" src="assets/js/animationheader.js"></script>
-<script type="text/javascript" src="assets/js/scrollToTop.js"></script>
-<script type="text/javascript" src="assets/js/vertical-nav.js"></script>
-
-<!--  script for google maps   -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Materialize js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+  </body>
 </html>

@@ -1,0 +1,127 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// color palette
+$blackColor: #040404;
+$grayColor: #747c84;
+$whiteColor: #ffffff;
+$blueColor: #0444ac;
+$orangeColor: #fc8404;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: $blackColor;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  .brand-logo {
+    margin-left: 1rem;
+    color: $blackColor;
+    font-family: "Google Sans";
+  }
+  .navColor {
+    background-color: transparent;
+  }
+  ul {
+    a {
+      color: $blackColor;
+      font-family: "Google Sans";
+    }
+  }
+}
+.customContainer {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+// Banner section
+.banner-section {
+  margin-top: 7%;
+}
+
+.sub-header {
+  margin: 0;
+}
+.rounded {
+  border-radius: 15px;
+}
+.card-image {
+  .tab-img {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+}
+
+// change tab color
+.tabs {
+  margin-bottom: 1rem;
+  .tab {
+    a {
+      color: $grayColor;
+    }
+  }
+} /*Black color to the text*/
+
+.tabs {
+  .tab {
+    a:hover {
+      background-color: $whiteColor;
+      color: $blackColor;
+    }
+  }
+} /*Text color on hover*/
+
+.tabs {
+  .tab {
+    a.active {
+      background-color: $whiteColor;
+      color: $blackColor;
+    }
+  }
+} /*Background and text color when a tab is active*/
+
+.tabs {
+  .indicator {
+    background-color: $blackColor;
+  }
+} /*Color of underline*/
+
+// Hover underline animation effect
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $blackColor;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $blackColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media only screen and (max-width: 600px) {
+  .customContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-section {
+    margin-top: 0;
+  }
+}

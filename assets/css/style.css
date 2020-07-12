@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #040404;
+  font-family: "Roboto", sans-serif;
+}
+
+nav .brand-logo {
+  margin-left: 1rem;
+  color: #040404;
+  font-family: "Google Sans";
+}
+
+nav .navColor {
+  background-color: transparent;
+}
+
+nav ul a {
+  color: #040404;
+  font-family: "Google Sans";
+}
+
+.customContainer {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+.banner-section {
+  margin-top: 7%;
+}
+
+.sub-header {
+  margin: 0;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.card-image .tab-img {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.tabs {
+  margin-bottom: 1rem;
+}
+
+.tabs .tab a {
+  color: #747c84;
+}
+
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: #ffffff;
+  color: #040404;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: #ffffff;
+  color: #040404;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: #040404;
+}
+
+/*Color of underline*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #040404;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #040404;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 600px) {
+  .customContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-section {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
