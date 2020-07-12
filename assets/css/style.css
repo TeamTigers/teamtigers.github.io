@@ -31,6 +31,10 @@ nav ul a {
   margin-right: 4rem;
 }
 
+.section {
+  height: 90vh;
+}
+
 .banner-section {
   margin-top: 7%;
 }
@@ -48,12 +52,22 @@ nav ul a {
   margin-top: 1.5rem;
 }
 
+.btn {
+  text-transform: none;
+  background-color: #040404 !important;
+  border-radius: 5px;
+}
+
+.description {
+  color: #3d3d3d;
+}
+
 .tabs {
   margin-bottom: 1rem;
 }
 
 .tabs .tab a {
-  color: #747c84;
+  color: #9c9c9c;
 }
 
 /*Black color to the text*/
@@ -64,7 +78,7 @@ nav ul a {
 
 /*Text color on hover*/
 .tabs .tab a.active {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   color: #040404;
 }
 

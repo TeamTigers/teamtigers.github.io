@@ -3,7 +3,8 @@
 
 // color palette
 $blackColor: #040404;
-$grayColor: #747c84;
+$darkGray: #3d3d3d;
+$lightGray: #9c9c9c;
 $whiteColor: #ffffff;
 $blueColor: #0444ac;
 $orangeColor: #fc8404;
@@ -39,6 +40,9 @@ nav {
   margin-top: 1rem;
   margin-right: 4rem;
 }
+.section {
+  height: 90vh;
+}
 
 // Banner section
 .banner-section {
@@ -57,13 +61,21 @@ nav {
     margin-top: 1.5rem;
   }
 }
+.btn {
+  text-transform: none;
+  background-color: $blackColor !important;
+  border-radius: 5px;
+}
+.description {
+  color: $darkGray;
+}
 
 // change tab color
 .tabs {
   margin-bottom: 1rem;
   .tab {
     a {
-      color: $grayColor;
+      color: $lightGray;
     }
   }
 } /*Black color to the text*/
@@ -80,7 +92,7 @@ nav {
 .tabs {
   .tab {
     a.active {
-      background-color: $whiteColor;
+      background-color: $whiteColor !important;
       color: $blackColor;
     }
   }
