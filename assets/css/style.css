@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -32,12 +33,26 @@ nav ul a {
 }
 
 .section {
-  height: 85vh;
+  height: 90vh;
 }
 
-h1,
+#home .banner-header {
+  font-family: "Fjalla One", sans-serif;
+}
+
+#home .btn:hover {
+  background: #ffffff !important;
+  color: #040404;
+  border: 1px solid #040404;
+}
+
 h2 {
   font-family: "Google Sans";
+  font-weight: 400;
+}
+
+.typewrite {
+  color: #fc8404;
 }
 
 .banner-section {
@@ -57,15 +72,25 @@ h2 {
   margin-top: 1.5rem;
 }
 
+.dev-icon {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+.dev-icon:hover {
+  color: #fc8404;
+}
+
 .btn {
   text-transform: none;
   background-color: #040404 !important;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .more-btn {
   height: 3rem;
   width: 10rem;
+  font-weight: 600;
   line-height: 3;
 }
 

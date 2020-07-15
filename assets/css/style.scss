@@ -1,5 +1,6 @@
 // font
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 // color palette
 $blackColor: #040404;
@@ -41,11 +42,27 @@ nav {
   margin-right: 4rem;
 }
 .section {
-  height: 85vh;
+  height: 90vh;
 }
-h1,
+
+#home {
+  .banner-header {
+    font-family: "Fjalla One", sans-serif;
+  }
+  .btn:hover {
+    background: $whiteColor !important;
+    color: $blackColor;
+    border: 1px solid $blackColor;
+  }
+}
+
 h2 {
   font-family: "Google Sans";
+  font-weight: 400;
+}
+
+.typewrite {
+  color: $orangeColor;
 }
 
 // Banner section
@@ -66,14 +83,24 @@ h2 {
   }
 }
 
+.dev-icon {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+
+  &:hover {
+    color: $orangeColor;
+  }
+}
+
 .btn {
   text-transform: none;
   background-color: $blackColor !important;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .more-btn {
   height: 3rem;
   width: 10rem;
+  font-weight: 600;
   line-height: 3;
 }
 .secondary-link {

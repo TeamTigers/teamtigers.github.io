@@ -1,5 +1,6 @@
 $(function () {
   $(".tabs").tabs();
+  $(".sidenav").sidenav();
 });
 
 AOS.init();

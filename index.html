@@ -18,6 +18,11 @@
     />
     <!-- Aos scroll effect -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Dev Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+    />
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -35,6 +40,11 @@
               <li>
                 <a class="active hover-underline-animation" href="#home"
                   >Home</a
+                >
+              </li>
+              <li>
+                <a class="hover-underline-animation" href="#about_us"
+                  >About Us</a
                 >
               </li>
               <li>
@@ -56,10 +66,10 @@
       </div>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Sass</a></li>
-        <li><a href="#">Components</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">Mobile</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why_us">Why us</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </header>
 
@@ -75,20 +85,20 @@
                 data-aos-duration="1500"
               >
                 <h1 class="banner-header">
-                  We will provide you <br />
+                  We'll provide you the<br />
                   <span
                     class="typewrite"
                     data-period="300"
-                    data-type='[ "the best design", "secured application", ""]'
+                    data-type='[ "eye catching design", "secured application", "latest technology"]'
                     ><span class="wrap"></span
                   ></span>
                 </h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Neque velit, eum nemo vel laboriosam repellendus! Quaerat
-                  corporis a debitis excepturi nulla, ipsum neque molestias
-                  esse, ea non, iste vel cumque.
+                <p class="flow-text description">
+                  Hello! If you are looking for someone or a team to build you a
+                  secured, cool looking and fast application then you are in
+                  right place.
                 </p>
+                <a href="#about_us" class="btn more-btn">Learn more</a>
               </div>
               <div class="col s12 m6 l6">
                 <img
@@ -102,6 +112,48 @@
           </div>
         </div>
         <!-- HOME SECTION ENDS -->
+
+        <!-- ABOUT US SECTION STARTS -->
+        <div class="section">
+          <div id="about_us">
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <img
+                  src="assets/img/svg/undraw_team_spirit_hrr4.svg"
+                  alt="collaboration"
+                  class="responsive-img"
+                />
+              </div>
+              <div
+                class="col s12 m6 l6"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <h2 class="sub-header">About us</h2>
+                <p>
+                  Our team is a group of individuals looking to create amazing
+                  pieces of work. Our motto is to bring elegant & new tastes of
+                  UI, faster performance system. We will try our best to give
+                  you a better output.
+                </p>
+                <p>
+                  We code to develop not only software but to make life and work
+                  easier and comfortable. The motto we bear is to take our
+                  country at the top of networking world. Programming is not
+                  just coding, its a passion we have that makes us do things
+                  more sophisticatedly. We try to build things that can be
+                  utilized in many ways which is called re-usability that makes
+                  things faster, smarter and better.
+                </p>
+                <p>
+                  We can't wait to work with you because you will love to work
+                  with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ABOUT US SECTION ENDS -->
 
         <!-- SERVICE SECTION STARTS -->
         <div class="section">
@@ -124,7 +176,7 @@
                 </div>
 
                 <!-- Web services -->
-                <div id="web" class="col s12">
+                <div id="web">
                   <div class="col s12">
                     <div class="card rounded z-depth-2">
                       <div class="card-content">
@@ -137,11 +189,12 @@
                             />
                           </div>
                           <div class="col s12 m6 l6">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Necessitatibus saepe harum incidunt mollitia
-                            reiciendis! Et accusamus ullam vitae earum
-                            exercitationem inventore in illum, suscipit nam
-                            perferendis dolorum provident rem quidem.
+                            <p class="description">
+                              We will provide you the best web sites with
+                              material design and minimal design. We can also
+                              provide secured web application in latest
+                              frameworks like .NET Core, django and ExpressJS.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -150,7 +203,7 @@
                 </div>
 
                 <!-- Mobile services -->
-                <div id="mobile" class="col s12">
+                <div id="mobile">
                   <div class="col s12">
                     <div class="card horizontal rounded z-depth-2">
                       <div class="card-content">
@@ -164,11 +217,13 @@
                           </div>
 
                           <div class="col s12 m6 l6">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Necessitatibus saepe harum incidunt mollitia
-                            reiciendis! Et accusamus ullam vitae earum
-                            exercitationem inventore in illum, suscipit nam
-                            perferendis dolorum provident rem quidem.
+                            <p class="description">
+                              In this modern world most of the people use smart
+                              phone which can do tremendous number of work.
+                              Now-a-days people tend to use mobile app instead
+                              of web app. We can provide mobile application in
+                              Flutter which can be used in Android and iOS.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -177,7 +232,7 @@
                 </div>
 
                 <!-- UI services -->
-                <div id="ui" class="col s12">
+                <div id="ui">
                   <div class="col s12">
                     <div class="card rounded z-depth-2">
                       <div class="card-content">
@@ -190,11 +245,12 @@
                             />
                           </div>
                           <div class="col s12 m6 l6">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Necessitatibus saepe harum incidunt mollitia
-                            reiciendis! Et accusamus ullam vitae earum
-                            exercitationem inventore in illum, suscipit nam
-                            perferendis dolorum provident rem quidem.
+                            <p class="description">
+                              To attract customer you need a perfect looking
+                              application to get the good first impression. We
+                              can provide you the eye catching UI/UX design for
+                              your next project.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -203,7 +259,7 @@
                 </div>
 
                 <!-- API services -->
-                <div id="api" class="col s12">
+                <div id="api">
                   <div class="col s12">
                     <div class="card rounded z-depth-2">
                       <div class="card-content">
@@ -216,11 +272,13 @@
                             />
                           </div>
                           <div class="col s12 m6 l6">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Necessitatibus saepe harum incidunt mollitia
-                            reiciendis! Et accusamus ullam vitae earum
-                            exercitationem inventore in illum, suscipit nam
-                            perferendis dolorum provident rem quidem.
+                            <p class="description">
+                              In this modern world we want to surf that
+                              environment or site in which we have less work to
+                              do. API is something that makes our life easier.
+                              We can build you a perfect API for your project in
+                              .NET Core or NodeJS with security.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -231,15 +289,55 @@
 
               <div
                 class="col s12 m6 l6"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="1500"
               >
                 <h2 class="sub-header">Our services</h2>
+                <p class="description">
+                  We promise you a new look and more importantly, a new
+                  attitude. We build that by getting to know you, your needs and
+                  creating the best looking web design and most bug free
+                  development. We use the latest technology to cope up with the
+                  never stop world tech.
+                </p>
+                <p class="description">
+                  Programming/Markup Language that we work on are
+                  <b>JavaScript, Python, Dart, C#, C++, HTML, CSS.</b> For
+                  framework or library we mostly use are
+                  <b>.NET Core, django, ExpressJS, ReactJS</b> . CSS framework
+                  we use are
+                  <b>Materializecss, Bootstrap, BulmaCss</b>
+                </p>
+                <br />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  est iste ducimus, aliquam aut ex hic suscipit molestiae id eum
-                  quibusdam quam a, maiores quas quos debitis commodi, repellat
-                  voluptas.
+                  <i class="devicon-html5-plain-wordmark colored dev-icon"></i>
+                  <i class="devicon-css3-plain-wordmark colored dev-icon"></i>
+                  <i class="devicon-javascript-plain colored dev-icon"></i>
+
+                  <i class="devicon-csharp-plain-wordmark colored dev-icon"></i>
+                  <i
+                    class="devicon-cplusplus-plain-wordmark colored dev-icon"
+                  ></i>
+                  <i class="devicon-django-plain colored dev-icon"></i>
+                  <i
+                    class="devicon-dot-net-plain-wordmark colored dev-icon"
+                  ></i>
+                  <i
+                    class="devicon-express-original-wordmark colored dev-icon"
+                  ></i>
+                  <i class="devicon-docker-plain-wordmark colored dev-icon"></i>
+                  <i class="devicon-git-plain-wordmark colored dev-icon"></i>
+                  <i class="devicon-jquery-plain-wordmark colored dev-icon"></i>
+                  <i
+                    class="devicon-mongodb-plain-wordmark colored dev-icon"
+                  ></i>
+                  <i class="devicon-mysql-plain-wordmark colored dev-icon"></i>
+                  <i class="devicon-oracle-original colored dev-icon"></i>
+                  <i class="devicon-python-plain-wordmark colored dev-icon"></i>
+                  <i
+                    class="devicon-react-original-wordmark colored dev-icon"
+                  ></i>
+                  <i class="devicon-sass-original colored dev-icon"></i>
                 </p>
               </div>
             </div>
@@ -258,15 +356,17 @@
               >
                 <h2>Why us?</h2>
                 <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid provident suscipit vel dolorum sequi beatae cumque
-                  enim voluptatum tempore, dolore delectus labore quas nobis
-                  corporis voluptates, voluptas inventore porro vero.
+                  We value your trust and we always give importance customer
+                  satisfaction. <br /><br />
+                  <b>Why we care?</b> <br />Because we are obsessed with
+                  customer satisfaction and we know that high-standard customer
+                  service can win clients’ hearts. We always follow the standard
+                  to give you the best product we can afford.
                 </p>
               </div>
               <div class="col s12 m6 l6">
                 <img
-                  src="assets/img/svg/why_us.svg"
+                  src="assets/img/svg/Live collaboration-rafiki.svg"
                   alt="why-us"
                   class="responsive-img"
                 />
