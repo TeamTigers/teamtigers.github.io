@@ -52,7 +52,13 @@ nav {
   .btn:hover {
     background: $whiteColor !important;
     color: $blackColor;
-    border: 1px solid $blackColor;
+    border: 2px solid $blackColor;
+    border-radius: 10px;
+  }
+}
+#projects {
+  img {
+    max-height: 152px;
   }
 }
 

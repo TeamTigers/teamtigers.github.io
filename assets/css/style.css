@@ -43,7 +43,12 @@ nav ul a {
 #home .btn:hover {
   background: #ffffff !important;
   color: #040404;
-  border: 1px solid #040404;
+  border: 2px solid #040404;
+  border-radius: 10px;
+}
+
+#projects img {
+  max-height: 152px;
 }
 
 h2 {
