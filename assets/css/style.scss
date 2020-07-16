@@ -61,6 +61,25 @@ nav {
     max-height: 152px;
   }
 }
+#team {
+  h5 {
+    font-family: "Google Sans";
+  }
+  .row {
+    margin-top: 2rem;
+  }
+  img {
+    border-radius: 50%;
+    border: 8px solid $darkGray;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: none;
+      border: 8px solid $lightGray;
+    }
+  }
+}
 
 h2 {
   font-family: "Google Sans";
@@ -101,7 +120,7 @@ h2 {
 .btn {
   text-transform: none;
   background-color: $blackColor !important;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .more-btn {
   height: 3rem;

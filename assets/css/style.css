@@ -51,6 +51,29 @@ nav ul a {
   max-height: 152px;
 }
 
+#team h5 {
+  font-family: "Google Sans";
+}
+
+#team .row {
+  margin-top: 2rem;
+}
+
+#team img {
+  border-radius: 50%;
+  border: 8px solid #3d3d3d;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#team img:hover {
+  -webkit-filter: none;
+          filter: none;
+  border: 8px solid #9c9c9c;
+}
+
 h2 {
   font-family: "Google Sans";
   font-weight: 400;
@@ -89,7 +112,7 @@ h2 {
 .btn {
   text-transform: none;
   background-color: #040404 !important;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .more-btn {
