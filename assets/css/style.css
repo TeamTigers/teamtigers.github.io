@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #040404;
+  font-family: "Roboto", sans-serif;
+}
+
+nav .brand-logo {
+  margin-left: 1rem;
+  color: #040404;
+  font-family: "Google Sans";
+}
+
+nav .navColor {
+  background-color: transparent;
+}
+
+nav ul a {
+  font-weight: 600;
+  color: #040404;
+  font-family: "Google Sans";
+}
+
+.customContainer {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+
+.section {
+  height: 90vh;
+}
+
+#home .banner-header {
+  font-family: "Fjalla One", sans-serif;
+}
+
+#home .btn:hover {
+  background: #ffffff !important;
+  color: #040404;
+  border: 2px solid #040404;
+  border-radius: 10px;
+}
+
+#projects img {
+  max-height: 152px;
+}
+
+#team {
+  margin-top: 8rem;
+}
+
+#team h5 {
+  font-family: "Google Sans";
+}
+
+#team a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+#team img {
+  margin-top: 2rem;
+  max-height: 355px;
+  border: 8px solid #3d3d3d;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#team img:hover {
+  -webkit-filter: none;
+          filter: none;
+  border: 8px solid #9c9c9c;
+}
+
+#contact_us {
+  margin-top: 8rem;
+}
+
+#contact_us h6 {
+  color: #0444ac;
+}
+
+#blob1 {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+
+#blob2 {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#blob3 {
+  position: absolute;
+  top: 270%;
+  left: 1%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+h2 {
+  font-family: "Google Sans";
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #040404;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #9c9c9c;
+  border-radius: 12px;
+}
+
+.typewrite {
+  color: #fc8404;
+}
+
+.banner-section {
+  margin-top: 7%;
+}
+
+.sub-header {
+  margin: 0;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.card-image .tab-img {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.dev-icon {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+.dev-icon:hover {
+  color: #fc8404;
+}
+
+.btn {
+  text-transform: none;
+  background-color: #040404 !important;
+  border-radius: 5px;
+}
+
+.more-btn {
+  height: 4rem;
+  width: 13rem;
+  font-size: 1.25rem;
+  line-height: 3;
+}
+
+.secondary-link {
+  margin-left: 1rem;
+  text-transform: none;
+  background-color: #ffffff !important;
+  color: #040404;
+  border-bottom: 2px solid black;
+}
+
+.description {
+  color: #3d3d3d;
+}
+
+.tabs {
+  margin-bottom: 1rem;
+}
+
+.tabs .tab a {
+  color: #9c9c9c;
+}
+
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: #ffffff;
+  color: #040404;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: #ffffff !important;
+  color: #040404;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: #040404;
+}
+
+/*Color of underline*/
+.input-field input:focus + label {
+  color: #0444ac !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #0444ac !important;
+  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
+          box-shadow: 0 1px 0 0 #0444ac !important;
+}
+
+.input-field textarea:focus + label {
+  color: #0444ac !important;
+}
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #0444ac !important;
+  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
+  box-shadow: 0 1px 0 0 #0444ac !important;
+}
+
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid red !important;
+  -webkit-box-shadow: 0 1px 0 0 red !important;
+          box-shadow: 0 1px 0 0 red !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #0444ac !important;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #040404;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #040404;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 600px) {
+  .customContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-section {
+    margin-top: 0;
+  }
+  #team a {
+    font-size: 1rem;
+  }
+  #blob2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,292 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+// color palette
+$blackColor: #040404;
+$darkGray: #3d3d3d;
+$lightGray: #9c9c9c;
+$whiteColor: #ffffff;
+$blueColor: #0444ac;
+$orangeColor: #fc8404;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: $blackColor;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  .brand-logo {
+    margin-left: 1rem;
+    color: $blackColor;
+    font-family: "Google Sans";
+  }
+  .navColor {
+    background-color: transparent;
+  }
+  ul {
+    a {
+      font-weight: 600;
+      color: $blackColor;
+      font-family: "Google Sans";
+    }
+  }
+}
+.customContainer {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+.section {
+  height: 90vh;
+}
+
+#home {
+  .banner-header {
+    font-family: "Fjalla One", sans-serif;
+  }
+  .btn:hover {
+    background: $whiteColor !important;
+    color: $blackColor;
+    border: 2px solid $blackColor;
+    border-radius: 10px;
+  }
+}
+#projects {
+  img {
+    max-height: 152px;
+  }
+}
+#team {
+  margin-top: 8rem;
+  h5 {
+    font-family: "Google Sans";
+  }
+  a {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  img {
+    margin-top: 2rem;
+    max-height: 355px;
+    border: 8px solid $darkGray;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: none;
+      border: 8px solid $lightGray;
+    }
+  }
+}
+#contact_us {
+  margin-top: 8rem;
+  h6 {
+    color: $blueColor;
+  }
+}
+
+#blob1 {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+#blob2 {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+#blob3 {
+  position: absolute;
+  top: 270%;
+  left: 1%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+h2 {
+  font-family: "Google Sans";
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blackColor;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $lightGray;
+  border-radius: 12px;
+}
+
+.typewrite {
+  color: $orangeColor;
+}
+
+// Banner section
+.banner-section {
+  margin-top: 7%;
+}
+
+.sub-header {
+  margin: 0;
+}
+.rounded {
+  border-radius: 15px;
+}
+.card-image {
+  .tab-img {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+}
+
+.dev-icon {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+
+  &:hover {
+    color: $orangeColor;
+  }
+}
+
+.btn {
+  text-transform: none;
+  background-color: $blackColor !important;
+  border-radius: 5px;
+}
+.more-btn {
+  height: 4rem;
+  width: 13rem;
+  font-size: 1.25rem;
+  line-height: 3;
+}
+.secondary-link {
+  margin-left: 1rem;
+  text-transform: none;
+  background-color: $whiteColor !important;
+  color: $blackColor;
+  border-bottom: 2px solid black;
+}
+.description {
+  color: $darkGray;
+}
+
+// change tab color
+.tabs {
+  margin-bottom: 1rem;
+  .tab {
+    a {
+      color: $lightGray;
+    }
+  }
+} /*Black color to the text*/
+
+.tabs {
+  .tab {
+    a:hover {
+      background-color: $whiteColor;
+      color: $blackColor;
+    }
+  }
+} /*Text color on hover*/
+
+.tabs {
+  .tab {
+    a.active {
+      background-color: $whiteColor !important;
+      color: $blackColor;
+    }
+  }
+} /*Background and text color when a tab is active*/
+
+.tabs {
+  .indicator {
+    background-color: $blackColor;
+  }
+} /*Color of underline*/
+.input-field input:focus + label {
+  color: $blueColor !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid $blueColor !important;
+  box-shadow: 0 1px 0 0 $blueColor !important;
+}
+
+.input-field textarea:focus + label {
+  color: $blueColor !important;
+}
+.row .input-field textarea:focus {
+  border-bottom: 1px solid $blueColor !important;
+  -webkit-box-shadow: 0 1px 0 0 $blueColor !important;
+  box-shadow: 0 1px 0 0 $blueColor !important;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: $blueColor !important;
+}
+
+// Hover underline animation effect
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $blackColor;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $blackColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media only screen and (max-width: 600px) {
+  .customContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-section {
+    margin-top: 0;
+  }
+  #team {
+    a {
+      font-size: 1rem;
+    }
+  }
+  #blob2 {
+    display: none;
+  }
+}
