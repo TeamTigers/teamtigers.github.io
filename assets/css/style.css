@@ -22,6 +22,7 @@ nav .navColor {
 }
 
 nav ul a {
+  font-weight: 600;
   color: #040404;
   font-family: "Google Sans";
 }
@@ -55,12 +56,14 @@ nav ul a {
   font-family: "Google Sans";
 }
 
-#team .row {
-  margin-top: 2rem;
+#team a {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 #team img {
-  border-radius: 50%;
+  margin-top: 2rem;
+  max-height: 355px;
   border: 8px solid #3d3d3d;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -74,9 +77,50 @@ nav ul a {
   border: 8px solid #9c9c9c;
 }
 
+#blob1 {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+
+#blob2 {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#blob3 {
+  position: absolute;
+  top: 270%;
+  left: 1%;
+  z-index: -1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
 h2 {
   font-family: "Google Sans";
   font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c4c4c4;
+  border-radius: 12px;
 }
 
 .typewrite {
@@ -198,6 +242,12 @@ h2 {
   }
   .banner-section {
     margin-top: 0;
+  }
+  #team a {
+    font-size: 1rem;
+  }
+  #blob2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
