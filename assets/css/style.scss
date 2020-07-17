@@ -1,6 +1,7 @@
 // font
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 
 // color palette
 $blackColor: #040404;
@@ -24,7 +25,7 @@ nav {
   .brand-logo {
     margin-left: 1rem;
     color: $blackColor;
-    font-family: "Google Sans";
+    font-family: "Rowdies", cursive;
   }
   .navColor {
     background-color: transparent;

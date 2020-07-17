@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +15,7 @@ body {
 nav .brand-logo {
   margin-left: 1rem;
   color: #040404;
-  font-family: "Google Sans";
+  font-family: "Rowdies", cursive;
 }
 
 nav .navColor {
