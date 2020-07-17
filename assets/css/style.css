@@ -52,6 +52,10 @@ nav ul a {
   max-height: 152px;
 }
 
+#team {
+  margin-top: 8rem;
+}
+
 #team h5 {
   font-family: "Google Sans";
 }
@@ -75,6 +79,14 @@ nav ul a {
   -webkit-filter: none;
           filter: none;
   border: 8px solid #9c9c9c;
+}
+
+#contact_us {
+  margin-top: 8rem;
+}
+
+#contact_us h6 {
+  color: #0444ac;
 }
 
 #blob1 {
@@ -110,16 +122,16 @@ h2 {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #313131;
+  background: #040404;
   border-radius: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #c4c4c4;
+  background: #9c9c9c;
   border-radius: 12px;
 }
 
@@ -160,9 +172,9 @@ h2 {
 }
 
 .more-btn {
-  height: 3rem;
-  width: 10rem;
-  font-weight: 600;
+  height: 4rem;
+  width: 13rem;
+  font-size: 1.25rem;
   line-height: 3;
 }
 
@@ -204,6 +216,39 @@ h2 {
 }
 
 /*Color of underline*/
+.input-field input:focus + label {
+  color: #0444ac !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #0444ac !important;
+  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
+          box-shadow: 0 1px 0 0 #0444ac !important;
+}
+
+.input-field textarea:focus + label {
+  color: #0444ac !important;
+}
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #0444ac !important;
+  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
+  box-shadow: 0 1px 0 0 #0444ac !important;
+}
+
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid red !important;
+  -webkit-box-shadow: 0 1px 0 0 red !important;
+          box-shadow: 0 1px 0 0 red !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #0444ac !important;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
