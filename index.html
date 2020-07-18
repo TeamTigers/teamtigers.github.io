@@ -62,6 +62,36 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v7.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="316709322219975"
+      logged_in_greeting="Hi! How can we help you?"
+      logged_out_greeting="Hi! How can we help you?"
+    ></div>
+
     <header>
       <!-- Fixed navbar -->
       <div class="navbar-fixed">
@@ -116,7 +146,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about_us">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#why_us">Why Uss</a></li>
+        <li><a href="#why_us">Why Us</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#team">Contact Us</a></li>
@@ -591,12 +621,13 @@
           </div>
           <div class="row">
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/shunjid.jpg"
-                alt="shunjid"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/shunjid.jpg"
+                  alt="shunjid"
+                  class="circle responsive-img"
+                />
+
                 <h5>Shunjid Rahman</h5>
                 <span
                   ><a href="https://www.facebook.com/shunjid" target="_blank"
@@ -615,12 +646,12 @@
               </div>
             </div>
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/himel.jpg"
-                alt="himel"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/himel.jpg"
+                  alt="himel"
+                  class="circle responsive-img"
+                />
                 <h5>Zubayer Himel</h5>
                 <span
                   ><a
@@ -643,12 +674,12 @@
               </div>
             </div>
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/fahad.jpg"
-                alt="fahad"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/fahad.jpg"
+                  alt="fahad"
+                  class="circle responsive-img"
+                />
                 <h5>Shah Fahad</h5>
                 <span
                   ><a
@@ -671,12 +702,12 @@
               </div>
             </div>
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/sheble.jpg"
-                alt="sheble"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/sheble.jpg"
+                  alt="sheble"
+                  class="circle responsive-img"
+                />
                 <h5>Shibli Redwan</h5>
                 <span
                   ><a href="https://www.facebook.com/hm.sheble" target="_blank"
@@ -701,12 +732,12 @@
           </div>
           <div class="row">
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/anindo.jpg"
-                alt="anindo"
-                class="circle circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/anindo.jpg"
+                  alt="anindo"
+                  class="circle circle responsive-img"
+                />
                 <h5>Anindo Shahriar</h5>
                 <span
                   ><a
@@ -731,12 +762,12 @@
               </div>
             </div>
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/zihadul.jpg"
-                alt="zihadul"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/zihadul.jpg"
+                  alt="zihadul"
+                  class="circle responsive-img"
+                />
                 <h5>Zihadul Islam</h5>
                 <span
                   ><a href="https://www.facebook.com/zuizihad" target="_blank"
@@ -755,12 +786,12 @@
               </div>
             </div>
             <div class="col s12 m4 l3">
-              <img
-                src="assets/img/team/jinnatul.jpg"
-                alt="jinnatul"
-                class="circle responsive-img"
-              />
-              <div class="center">
+              <div class="center-align">
+                <img
+                  src="assets/img/team/jinnatul.jpg"
+                  alt="jinnatul"
+                  class="circle responsive-img"
+                />
                 <h5>Jinnatul Islam</h5>
                 <span
                   ><a
@@ -810,6 +841,7 @@
                             id="name"
                             type="text"
                             class="validate"
+                            required
                           />
                           <label for="name">Your name</label>
                         </div>
@@ -821,6 +853,7 @@
                             name="email"
                             type="email"
                             class="validate"
+                            required
                           />
                           <label for="email">Your email</label>
                         </div>
@@ -829,6 +862,7 @@
                           <textarea
                             id="message"
                             class="materialize-textarea"
+                            required
                           ></textarea>
                           <label for="message">Your message</label>
                         </div>
