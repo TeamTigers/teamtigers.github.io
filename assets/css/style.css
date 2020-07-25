@@ -22,6 +22,11 @@ nav .navColor {
   background-color: transparent;
 }
 
+nav #logo {
+  max-width: 9rem;
+  max-height: 4rem;
+}
+
 nav ul a {
   font-weight: 600;
   color: #040404;
