@@ -1,20 +1,24 @@
-// replace 'test-form' with the id of the form
 $(function () {
-  let $form = $("#contact-form"),
-    url =
-      "https://script.google.com/macros/s/AKfycbxrUI3NshPXWzeUs3X-I-cLyFyZwlZIR9mmDnhoTLNskdn1OB-H/exec";
-
-  // #submit-form is the id of the submit button: change it
-  $("#submit-contact-form").on("click", function (e) {
-    e.preventDefault();
-    let jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serialize(),
-      success: function () {
-        M.toast({ html: "Message Sent!" });
-      },
-    });
+  $("#contact-form").submit(function () {
+    let url = "https://cuntato.herokuapp.com/api/project-data";
+    let data = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      message: $("#message").val(),
+    };
+    data = JSON.stringify(data);
+    let projectID = "lp4qhvtmaa";
+    let currentURL = window.location.href;
+    $.post(
+      url,
+      { data, projectID: projectID, currentURL: currentURL },
+      function () {}
+    )
+      .done((res) => {
+        M.toast({ html: "Message sent successfully" });
+      })
+      .fail(() => {
+        M.toast({ html: "Something went wrong!" });
+      });
   });
 });
