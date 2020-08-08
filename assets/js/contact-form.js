@@ -1,5 +1,6 @@
 $(function () {
-  $("#contact-form").submit(function () {
+  $("#contact-form").submit(function (e) {
+    e.preventDefault();
     let url = "https://cuntato.herokuapp.com/api/project-data";
     let data = {
       name: $("#name").val(),
