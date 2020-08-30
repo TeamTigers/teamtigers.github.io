@@ -67,14 +67,28 @@ nav ul a {
 }
 
 #team a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
+}
+
+#team .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#team .card:hover {
+  -webkit-box-shadow: -1px 2px 15px #a9bad6;
+  box-shadow: -1px 2px 15px #a9bad6;
+}
+
+#team .card:hover h5 {
+  color: #fc8404;
 }
 
 #team img {
   margin-top: 2rem;
   max-height: 355px;
-  border: 8px solid #3d3d3d;
+  border: 5px solid #fc8404;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all 0.5s ease-in-out;
@@ -84,7 +98,7 @@ nav ul a {
 #team img:hover {
   -webkit-filter: none;
           filter: none;
-  border: 8px solid #9c9c9c;
+  border: 5px solid #9c9c9c;
 }
 
 #contact_us {
@@ -196,6 +210,10 @@ h2 {
   color: #3d3d3d;
 }
 
+.details {
+  font-size: 1.5em;
+}
+
 .tabs {
   margin-bottom: 1rem;
 }
@@ -293,9 +311,6 @@ h2 {
   }
   .banner-section {
     margin-top: 0;
-  }
-  #team a {
-    font-size: 1rem;
   }
   #blob2 {
     display: none;
