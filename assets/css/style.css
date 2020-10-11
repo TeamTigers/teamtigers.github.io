@@ -40,7 +40,11 @@ nav ul a {
 }
 
 .section {
-  height: 90vh;
+  height: 60vh;
+}
+
+.mt5 {
+  margin-top: 5rem;
 }
 
 #home .banner-header {
@@ -86,6 +90,11 @@ nav ul a {
   transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+#achievements img {
+  max-height: 150px;
+  border-radius: 12px;
 }
 
 #team {
@@ -323,12 +332,12 @@ h2 {
 
 ::-webkit-scrollbar-thumb {
   background: #141414;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: #9c9c9c;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 600px) {

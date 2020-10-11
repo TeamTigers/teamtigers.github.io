@@ -2,7 +2,6 @@ $(function () {
   $(".tabs").tabs();
   $(".sidenav").sidenav();
 });
-
 AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
   window.setTimeout(
