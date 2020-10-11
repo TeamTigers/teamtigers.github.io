@@ -35,9 +35,9 @@
     <meta property="twitter:image" content="assets/img/teamtigers.jpg" />
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" />
-    <!-- Icon -->
-    <link rel="stylesheet" href="assets/css/materializecss.min.css" />
     <!-- Materialize css -->
+    <link rel="stylesheet" href="assets/css/materializecss.min.css" />
+    <!-- Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Aos scroll effect -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -165,7 +165,7 @@
           <div id="about_us">
             <div class="row">
               <div class="col s12 m6 l5">
-                <img src="assets/img/svg/undraw_team_spirit_hrr4.svg" alt="collaboration" class="responsive-img" />
+                <img src="assets/img/svg/Connecting teams-pana.svg" alt="collaboration" class="responsive-img" />
               </div>
               <div class="col s12 m6 l7">
                 <h2 class="sub-header">About us</h2>
@@ -389,8 +389,8 @@
         <!-- PROJECT SECTION STARTS -->
         <div id="projects">
           <h2>Projects</h2>
-          <div class="row">
-            <div class="col s12 m6 l4">
+          <div class="row grid">
+            <div class="col s12 m6 l4 cell">
               <div class="card rounded z-depth-3">
                 <div class="card-image">
                   <img src="assets/img/projects/coronainfobd.png" alt="coronainfobd" class="responsive-img" />
@@ -411,7 +411,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m6 l4">
+            <div class="col s12 m6 l4 cell">
               <div class="card rounded z-depth-3">
                 <div class="card-image">
                   <img src="assets/img/projects/covid-map.png" alt="coronainfobd" class="responsive-img" />
@@ -433,8 +433,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="col s12 m6 l4">
+            <div class="col s12 m6 l4 cell">
               <div class="card rounded z-depth-3">
                 <div class="card-image">
                   <img src="assets/img/projects/retone.png" alt="retone" class="responsive-img" />
@@ -454,8 +453,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="col s12 m6 l4">
+          
+            <div class="col s12 m6 l4 cell">
               <div class="card rounded z-depth-3">
                 <div class="card-image">
                   <img src="assets/img/projects/donate_plasma.png" alt="donate_plasma" class="responsive-img" />
@@ -479,6 +478,29 @@
                 </div>
               </div>
             </div>
+            <div class="col s12 m6 l4 cell">
+              <div class="card rounded z-depth-3">
+                <div class="card-image">
+                  <img src="assets/img/achivements/minisauras.png" alt="donate_plasma" class="responsive-img" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Minisauras</span>
+                  <p class="description">
+                    An open-source CI/CD automation tool based on GitHub Actions that pulls all the JavaScript and CSS files from your base branch, minify them and creates a pull-request with a new branch.
+                  </p>
+                  <br />
+                  <a
+                    class="waves-effect btn btn-small"
+                    href="https://github.com/marketplace/actions/minisauras"
+                    target="_blank"
+                    ><i class="material-icons right">launch</i>Live Demo</a
+                  >
+                  <a class="secondary-link" href="https://github.com/TeamTigers/minisauras" target="_blank"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="center-align">
@@ -490,11 +512,31 @@
         </div>
         <!-- PROJECT SECTION ENDS -->
 
+        <div id="achievements">
+          <h2>Achievements</h2>
+          <div class="section">
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card rounded">
+                <div class="card-image">
+                  <img src="assets/img/projects/donate_plasma.png">
+                  <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">looks_two</i></a>
+                </div>
+                <div class="card-content">
+                  <a href="https://github.com/TeamTigers/donate_plasma"><span class="card-title black-text">Donate Plasma</span></a>
+                  <p>World Runner-Up project of International Flutter Hackthon 2020. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
         <!-- TEAM SECTION STARTS -->
         <div id="team">
           <h2>Team</h2>
           <div class="row">
-            <div class="col s12 m4 l2">
+            <div class="col s12 m4 l3">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -518,7 +560,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4 l2">
+            <div class="col s12 m4 l3">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -543,7 +585,7 @@
               </div>
             </div>
 
-            <div class="col s12 m4 l2">
+            <div class="col s12 m4 l3">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -568,7 +610,7 @@
               </div>
             </div>
 
-            <div class="col s12 m4 l2">
+            <div class="col s12 m4 l3">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -592,11 +634,13 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4 l2">
+          </div>
+          <div class="row">
+            <div class="col s12 m4 l4">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
-                    <img src="assets/img/team/anindo.jpg" alt="anindo" class="circle circle responsive-img" />
+                    <img src="assets/img/team/anindo.jpg" alt="anindo" class="circle responsive-img" />
                     <h5>Anindo Shahriar</h5>
                     <span
                       ><a href="https://www.facebook.com/anindo.shahriar.97" target="_blank"
@@ -616,7 +660,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4 l2">
+            <div class="col s12 m4 l4">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -640,9 +684,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m4 l2 offset-l5">
+            <div class="col s12 m4 l4">
               <div class="card rounded">
                 <div class="card-content">
                   <div class="center-align">
@@ -709,7 +751,7 @@
                           <textarea id="message" class="materialize-textarea" required></textarea>
                           <label for="message">Your message</label>
                         </div>
-                        <div class="center-align">
+                        <div class="center">
                           <input id="submit-contact-form" type="submit" value="Submit" class="btn more-btn" />
                         </div>
                       </form>

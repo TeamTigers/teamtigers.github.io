@@ -8,13 +8,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #040404;
-  font-family: "Roboto", sans-serif;
+  color: #141414;
+  font-family: "Google Sans";
 }
 
 nav .brand-logo {
   margin-left: 1rem;
-  color: #040404;
+  color: #141414;
   font-family: "Rowdies", cursive;
 }
 
@@ -29,7 +29,7 @@ nav #logo {
 
 nav ul a {
   font-weight: 600;
-  color: #040404;
+  color: #141414;
   font-family: "Google Sans";
 }
 
@@ -49,13 +49,43 @@ nav ul a {
 
 #home .btn:hover {
   background: #ffffff !important;
-  color: #040404;
-  border: 2px solid #040404;
+  color: #141414;
+  border: 2px solid #141414;
   border-radius: 10px;
+}
+
+#projects .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+#projects .grid .cell {
+  margin-left: 0;
+}
+
+#projects .card {
+  overflow: hidden;
 }
 
 #projects img {
   max-height: 152px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+#projects img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 #team {
@@ -74,19 +104,16 @@ nav ul a {
 #team .card {
   -webkit-box-shadow: none;
           box-shadow: none;
+  overflow: hidden;
 }
 
-#team .card:hover {
-  -webkit-box-shadow: -1px 2px 15px #a9bad6;
-  box-shadow: -1px 2px 15px #a9bad6;
-}
-
-#team .card:hover h5 {
-  color: #fc8404;
+#team .card h5 {
+  color: #141414;
 }
 
 #team img {
-  margin-top: 2rem;
+  width: 250px;
+  height: auto;
   max-height: 355px;
   border: 5px solid #fc8404;
   -webkit-filter: grayscale(100%);
@@ -98,7 +125,7 @@ nav ul a {
 #team img:hover {
   -webkit-filter: none;
           filter: none;
-  border: 5px solid #9c9c9c;
+  border: 5px solid #fc8404;
 }
 
 #contact_us {
@@ -141,20 +168,6 @@ h2 {
   font-weight: 400;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #040404;
-  border-radius: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #9c9c9c;
-  border-radius: 12px;
-}
-
 .typewrite {
   color: #fc8404;
 }
@@ -168,7 +181,7 @@ h2 {
 }
 
 .rounded {
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .card-image .tab-img {
@@ -187,12 +200,12 @@ h2 {
 
 .btn {
   text-transform: none;
-  background-color: #040404 !important;
+  background-color: #141414 !important;
   border-radius: 5px;
 }
 
 .more-btn {
-  height: 4rem;
+  height: 3.5rem;
   width: 13rem;
   font-size: 1.25rem;
   line-height: 3;
@@ -202,7 +215,7 @@ h2 {
   margin-left: 1rem;
   text-transform: none;
   background-color: #ffffff !important;
-  color: #040404;
+  color: #141414;
   border-bottom: 2px solid black;
 }
 
@@ -225,18 +238,18 @@ h2 {
 /*Black color to the text*/
 .tabs .tab a:hover {
   background-color: #ffffff;
-  color: #040404;
+  color: #141414;
 }
 
 /*Text color on hover*/
 .tabs .tab a.active {
   background-color: #ffffff !important;
-  color: #040404;
+  color: #141414;
 }
 
 /*Background and text color when a tab is active*/
 .tabs .indicator {
-  background-color: #040404;
+  background-color: #141414;
 }
 
 /*Color of underline*/
@@ -276,7 +289,7 @@ h2 {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #040404;
+  color: #141414;
 }
 
 .hover-underline-animation:after {
@@ -288,7 +301,7 @@ h2 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #040404;
+  background-color: #141414;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -302,6 +315,20 @@ h2 {
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #9c9c9c;
+  border-radius: 12px;
 }
 
 @media only screen and (max-width: 600px) {

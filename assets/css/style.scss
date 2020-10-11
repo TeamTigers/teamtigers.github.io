@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 
 // color palette
-$blackColor: #040404;
+$blackColor: #141414;
 $darkGray: #3d3d3d;
 $lightGray: #9c9c9c;
 $whiteColor: #ffffff;
@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   color: $blackColor;
-  font-family: "Roboto", sans-serif;
+  font-family: "Google Sans";
 }
 
 nav {
@@ -63,8 +63,32 @@ nav {
   }
 }
 #projects {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+  }
+
+  .grid .cell {
+    margin-left: 0;
+  }
+  .card {
+    overflow: hidden;
+  }
   img {
     max-height: 152px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
   }
 }
 #team {
@@ -79,20 +103,16 @@ nav {
 
   .card {
     box-shadow: none;
+    overflow: hidden;
 
-    &:hover {
-      -webkit-box-shadow: -1px 2px 15px rgba(169, 186, 214, 1);
-      -moz-box-shadow: -1px 2px 15px rgba(169, 186, 214, 1);
-      box-shadow: -1px 2px 15px rgba(169, 186, 214, 1);
-
-      h5 {
-        color: $orangeColor;
-      }
+    h5 {
+      color: $blackColor;
     }
   }
 
   img {
-    margin-top: 2rem;
+    width: 250px;
+    height: auto;
     max-height: 355px;
     border: 5px solid $orangeColor;
     filter: grayscale(100%);
@@ -100,7 +120,7 @@ nav {
 
     &:hover {
       filter: none;
-      border: 5px solid $lightGray;
+      border: 5px solid $orangeColor;
     }
   }
 }
@@ -141,20 +161,6 @@ h2 {
   font-weight: 400;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $blackColor;
-  border-radius: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: $lightGray;
-  border-radius: 12px;
-}
-
 .typewrite {
   color: $orangeColor;
 }
@@ -168,7 +174,7 @@ h2 {
   margin: 0;
 }
 .rounded {
-  border-radius: 15px;
+  border-radius: 12px;
 }
 .card-image {
   .tab-img {
@@ -192,7 +198,7 @@ h2 {
   border-radius: 5px;
 }
 .more-btn {
-  height: 4rem;
+  height: 3.5rem;
   width: 13rem;
   font-size: 1.25rem;
   line-height: 3;
@@ -294,6 +300,21 @@ h2 {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+// Scrollbar design
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blackColor;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $lightGray;
+  border-radius: 12px;
 }
 @media only screen and (max-width: 600px) {
   .customContainer {
