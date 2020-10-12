@@ -49,7 +49,7 @@ nav {
 }
 
 .section {
-  height: 90vh;
+  height: 100vh;
 }
 .mt10 {
   margin-top: 10rem;
@@ -397,5 +397,8 @@ h2 {
   }
   .banner-section {
     margin-top: 0;
+  }
+  .banner {
+    display: none;
   }
 }

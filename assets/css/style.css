@@ -40,7 +40,7 @@ nav ul a {
 }
 
 .section {
-  height: 90vh;
+  height: 100vh;
 }
 
 .mt10 {
@@ -397,6 +397,9 @@ h2 {
   }
   .banner-section {
     margin-top: 0;
+  }
+  .banner {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

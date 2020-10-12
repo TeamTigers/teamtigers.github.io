@@ -1,7 +1,11 @@
 $(function () {
   $(".tabs").tabs();
-  $(".sidenav").sidenav();
   $('.collapsible').collapsible();
+  $('.sidenav')
+        .sidenav()
+        .on('click tap', 'li a', () => {
+            $('.sidenav').sidenav('close');
+        });
 });
 AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
