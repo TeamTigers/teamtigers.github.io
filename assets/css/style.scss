@@ -48,7 +48,7 @@ nav {
   margin-right: 4rem;
 }
 .section {
-  height: 70vh;
+  height: 90vh;
 }
 .mt5 {
   margin-top: 5rem;
@@ -58,11 +58,56 @@ nav {
   .banner-header {
     font-family: "Fjalla One", sans-serif;
   }
-  .btn:hover {
-    background: $whiteColor !important;
-    color: $blackColor;
-    border: 2px solid $blackColor;
-    border-radius: 10px;
+  .btn {
+    span {
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+
+      &::after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -10px;
+        transition: 0.5s;
+      }
+    }
+    &:hover {
+      span {
+        padding-right: 25px;
+
+        &::after {
+          opacity: 1;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+#services {
+  .card {
+    border-top: 6px solid #4a148c;
+    .card-content {
+      padding: 20px;
+      height: 213px;
+
+      h5 {
+        font-weight: 700;
+      }
+    }
+
+    .services-img {
+      height: 80px;
+      width: auto;
+    }
+  }
+}
+
+#why_us {
+  card {
+    box-shadow: none;
   }
 }
 #projects {
@@ -86,7 +131,7 @@ nav {
     max-height: 152px;
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
+    border-radius: 6px;
 
     &:hover {
       transform: scale(1.1);
@@ -98,7 +143,7 @@ nav {
 #achievements {
   img {
     max-height: 150px;
-    border-radius: 12px;
+    border-radius: 6px;
   }
 }
 
@@ -142,31 +187,6 @@ nav {
   }
 }
 
-#blob1 {
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  max-height: 400px;
-  max-width: 400px;
-  z-index: -1;
-}
-#blob2 {
-  position: absolute;
-  top: 180%;
-  left: 50%;
-  z-index: -1;
-  max-width: 400px;
-  max-height: 400px;
-}
-#blob3 {
-  position: absolute;
-  top: 270%;
-  left: 1%;
-  z-index: -1;
-  max-width: 400px;
-  max-height: 400px;
-}
-
 h2 {
   font-family: "Google Sans";
   font-weight: 400;
@@ -181,11 +201,8 @@ h2 {
   margin-top: 7%;
 }
 
-.sub-header {
-  margin: 0;
-}
 .rounded {
-  border-radius: 12px;
+  border-radius: 6px;
 }
 .card-image {
   .tab-img {

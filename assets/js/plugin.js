@@ -1,6 +1,7 @@
 $(function () {
   $(".tabs").tabs();
   $(".sidenav").sidenav();
+  $('.collapsible').collapsible();
 });
 AOS.init();
 document.addEventListener("DOMContentLoaded", function () {

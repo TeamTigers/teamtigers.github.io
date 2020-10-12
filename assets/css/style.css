@@ -40,7 +40,7 @@ nav ul a {
 }
 
 .section {
-  height: 70vh;
+  height: 90vh;
 }
 
 .mt5 {
@@ -51,11 +51,53 @@ nav ul a {
   font-family: "Fjalla One", sans-serif;
 }
 
-#home .btn:hover {
-  background: #ffffff !important;
-  color: #141414;
-  border: 2px solid #141414;
-  border-radius: 10px;
+#home .btn span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home .btn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home .btn:hover span {
+  padding-right: 25px;
+}
+
+#home .btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+#services .card {
+  border-top: 6px solid #4a148c;
+}
+
+#services .card .card-content {
+  padding: 20px;
+  height: 213px;
+}
+
+#services .card .card-content h5 {
+  font-weight: 700;
+}
+
+#services .card .services-img {
+  height: 80px;
+  width: auto;
+}
+
+#why_us card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #projects .grid {
@@ -80,7 +122,7 @@ nav ul a {
   max-height: 152px;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 #projects img:hover {
@@ -94,7 +136,7 @@ nav ul a {
 
 #achievements img {
   max-height: 150px;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 #team {
@@ -145,33 +187,6 @@ nav ul a {
   color: #0444ac;
 }
 
-#blob1 {
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  max-height: 400px;
-  max-width: 400px;
-  z-index: -1;
-}
-
-#blob2 {
-  position: absolute;
-  top: 180%;
-  left: 50%;
-  z-index: -1;
-  max-width: 400px;
-  max-height: 400px;
-}
-
-#blob3 {
-  position: absolute;
-  top: 270%;
-  left: 1%;
-  z-index: -1;
-  max-width: 400px;
-  max-height: 400px;
-}
-
 h2 {
   font-family: "Google Sans";
   font-weight: 400;
@@ -185,12 +200,8 @@ h2 {
   margin-top: 7%;
 }
 
-.sub-header {
-  margin: 0;
-}
-
 .rounded {
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .card-image .tab-img {
