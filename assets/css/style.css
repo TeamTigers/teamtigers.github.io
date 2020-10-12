@@ -143,8 +143,8 @@ nav ul a {
   margin-top: 8rem;
 }
 
-#team h5 {
-  font-family: "Google Sans";
+#team .name {
+  font-size: 1.3em;
 }
 
 #team a {
@@ -155,7 +155,6 @@ nav ul a {
 #team .card {
   -webkit-box-shadow: none;
           box-shadow: none;
-  overflow: hidden;
 }
 
 #team .card h5 {
@@ -219,6 +218,8 @@ h2 {
 }
 
 .btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-transform: none;
   background-color: #141414 !important;
   border-radius: 5px;

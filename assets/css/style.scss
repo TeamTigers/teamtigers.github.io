@@ -149,8 +149,8 @@ nav {
 
 #team {
   margin-top: 8rem;
-  h5 {
-    font-family: "Google Sans";
+  .name {
+    font-size: 1.3em;
   }
   a {
     font-size: 1.5rem;
@@ -159,7 +159,6 @@ nav {
 
   .card {
     box-shadow: none;
-    overflow: hidden;
 
     h5 {
       color: $blackColor;
@@ -221,6 +220,7 @@ h2 {
 }
 
 .btn {
+  box-shadow: none;
   text-transform: none;
   background-color: $blackColor !important;
   border-radius: 5px;
