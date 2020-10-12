@@ -157,19 +157,16 @@ nav {
   }
 }
 #projects {
-  .grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-  }
+  // .grid {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-content: flex-start;
 
-  .grid .cell {
-    margin-left: 0;
-  }
+  //   .cell {
+  //     margin-left: 0;
+  //   }
+  // }
+
   .card {
     overflow: hidden;
   }
