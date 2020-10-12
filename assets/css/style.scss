@@ -4,11 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 
 // color palette
-$blackColor: #141414;
+$blackColor: #313030;
 $darkGray: #3d3d3d;
 $lightGray: #9c9c9c;
 $whiteColor: #ffffff;
-$blueColor: #0444ac;
+$blueColor: #1a73e9;
 $orangeColor: #fc8404;
 
 html {
@@ -43,10 +43,11 @@ nav {
   }
 }
 .customContainer {
-  margin-left: 4rem;
+  margin-left: 4em;
   margin-top: 1rem;
-  margin-right: 4rem;
+  margin-right: 4em;
 }
+
 .section {
   height: 90vh;
 }
@@ -89,12 +90,19 @@ nav {
 #services {
   .card {
     border-top: 6px solid #4a148c;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    &:hover {
+      background: rgb(27, 89, 255);
+      background: linear-gradient(90deg, rgba(27, 89, 255, 1) 0%, rgba(34, 199, 242, 1) 100%);
+      color: $whiteColor;
+    }
     .card-content {
       padding: 20px;
       height: 213px;
 
       h5 {
-        font-weight: 700;
+        font-weight: 200;
       }
     }
 
@@ -106,8 +114,46 @@ nav {
 }
 
 #why_us {
-  card {
+  .card {
     box-shadow: none;
+    overflow: hidden;
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 5px 1px rgba(176, 176, 176, 1);
+      -moz-box-shadow: 0px 0px 5px 1px rgba(176, 176, 176, 1);
+      box-shadow: 0px 0px 5px 1px rgba(176, 176, 176, 1);
+
+      .card-design {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background: $orangeColor;
+        right: -5%;
+        top: -14%;
+        overflow: hidden;
+      }
+      .card-design2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background: $orangeColor;
+        right: -5%;
+        top: -10%;
+        overflow: hidden;
+      }
+      .card-design3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background: $orangeColor;
+        right: -6%;
+        top: -18%;
+        overflow: hidden;
+      }
+    }
   }
 }
 #projects {
@@ -140,7 +186,10 @@ nav {
   }
 }
 
-#achievements {
+#activities {
+  .icon-color {
+    background-color: $orangeColor !important;
+  }
   img {
     max-height: 150px;
     border-radius: 6px;
@@ -192,7 +241,7 @@ h2 {
 }
 
 .typewrite {
-  color: $orangeColor;
+  color: $blueColor;
 }
 
 // Banner section
@@ -222,7 +271,7 @@ h2 {
 .btn {
   box-shadow: none;
   text-transform: none;
-  background-color: $blackColor !important;
+  background-color: $blueColor !important;
   border-radius: 5px;
 }
 .more-btn {

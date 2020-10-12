@@ -8,13 +8,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #141414;
+  color: #313030;
   font-family: "Google Sans";
 }
 
 nav .brand-logo {
   margin-left: 1rem;
-  color: #141414;
+  color: #313030;
   font-family: "Rowdies", cursive;
 }
 
@@ -29,14 +29,14 @@ nav #logo {
 
 nav ul a {
   font-weight: 600;
-  color: #141414;
+  color: #313030;
   font-family: "Google Sans";
 }
 
 .customContainer {
-  margin-left: 4rem;
+  margin-left: 4em;
   margin-top: 1rem;
-  margin-right: 4rem;
+  margin-right: 4em;
 }
 
 .section {
@@ -79,6 +79,15 @@ nav ul a {
 
 #services .card {
   border-top: 6px solid #4a148c;
+  -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#services .card:hover {
+  background: #1b59ff;
+  background: -webkit-gradient(linear, left top, right top, from(#1b59ff), to(#22c7f2));
+  background: linear-gradient(90deg, #1b59ff 0%, #22c7f2 100%);
+  color: #ffffff;
 }
 
 #services .card .card-content {
@@ -87,7 +96,7 @@ nav ul a {
 }
 
 #services .card .card-content h5 {
-  font-weight: 700;
+  font-weight: 200;
 }
 
 #services .card .services-img {
@@ -95,9 +104,48 @@ nav ul a {
   width: auto;
 }
 
-#why_us card {
+#why_us .card {
   -webkit-box-shadow: none;
           box-shadow: none;
+  overflow: hidden;
+}
+
+#why_us .card:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px #b0b0b0;
+  box-shadow: 0px 0px 5px 1px #b0b0b0;
+}
+
+#why_us .card:hover .card-design {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fc8404;
+  right: -5%;
+  top: -14%;
+  overflow: hidden;
+}
+
+#why_us .card:hover .card-design2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fc8404;
+  right: -5%;
+  top: -10%;
+  overflow: hidden;
+}
+
+#why_us .card:hover .card-design3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fc8404;
+  right: -6%;
+  top: -18%;
+  overflow: hidden;
 }
 
 #projects .grid {
@@ -134,7 +182,11 @@ nav ul a {
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-#achievements img {
+#activities .icon-color {
+  background-color: #fc8404 !important;
+}
+
+#activities img {
   max-height: 150px;
   border-radius: 6px;
 }
@@ -158,7 +210,7 @@ nav ul a {
 }
 
 #team .card h5 {
-  color: #141414;
+  color: #313030;
 }
 
 #team img {
@@ -183,7 +235,7 @@ nav ul a {
 }
 
 #contact_us h6 {
-  color: #0444ac;
+  color: #1a73e9;
 }
 
 h2 {
@@ -192,7 +244,7 @@ h2 {
 }
 
 .typewrite {
-  color: #fc8404;
+  color: #1a73e9;
 }
 
 .banner-section {
@@ -221,7 +273,7 @@ h2 {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-transform: none;
-  background-color: #141414 !important;
+  background-color: #1a73e9 !important;
   border-radius: 5px;
 }
 
@@ -236,7 +288,7 @@ h2 {
   margin-left: 1rem;
   text-transform: none;
   background-color: #ffffff !important;
-  color: #141414;
+  color: #313030;
   border-bottom: 2px solid black;
 }
 
@@ -259,40 +311,40 @@ h2 {
 /*Black color to the text*/
 .tabs .tab a:hover {
   background-color: #ffffff;
-  color: #141414;
+  color: #313030;
 }
 
 /*Text color on hover*/
 .tabs .tab a.active {
   background-color: #ffffff !important;
-  color: #141414;
+  color: #313030;
 }
 
 /*Background and text color when a tab is active*/
 .tabs .indicator {
-  background-color: #141414;
+  background-color: #313030;
 }
 
 /*Color of underline*/
 .input-field input:focus + label {
-  color: #0444ac !important;
+  color: #1a73e9 !important;
 }
 
 /* label underline focus color */
 .row .input-field input:focus {
-  border-bottom: 1px solid #0444ac !important;
-  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
-          box-shadow: 0 1px 0 0 #0444ac !important;
+  border-bottom: 1px solid #1a73e9 !important;
+  -webkit-box-shadow: 0 1px 0 0 #1a73e9 !important;
+          box-shadow: 0 1px 0 0 #1a73e9 !important;
 }
 
 .input-field textarea:focus + label {
-  color: #0444ac !important;
+  color: #1a73e9 !important;
 }
 
 .row .input-field textarea:focus {
-  border-bottom: 1px solid #0444ac !important;
-  -webkit-box-shadow: 0 1px 0 0 #0444ac !important;
-  box-shadow: 0 1px 0 0 #0444ac !important;
+  border-bottom: 1px solid #1a73e9 !important;
+  -webkit-box-shadow: 0 1px 0 0 #1a73e9 !important;
+  box-shadow: 0 1px 0 0 #1a73e9 !important;
 }
 
 /* invalid color */
@@ -304,13 +356,13 @@ h2 {
 
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #0444ac !important;
+  color: #1a73e9 !important;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #141414;
+  color: #313030;
 }
 
 .hover-underline-animation:after {
@@ -322,7 +374,7 @@ h2 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #141414;
+  background-color: #313030;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -343,7 +395,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #141414;
+  background: #313030;
   border-radius: 8px;
 }
 
