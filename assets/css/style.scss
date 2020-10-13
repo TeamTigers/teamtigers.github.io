@@ -23,10 +23,10 @@ body {
 nav {
   .brand-logo {
     margin-left: 1rem;
-    // background: -webkit-linear-gradient(100deg, rgba(27, 200, 255, 1) 0%, rgba(34, 59, 242, 1) 100%);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    color: #5914d8;
+    // color: #733add;
+    background: -webkit-linear-gradient(rgb(10, 97, 228), rgb(240, 98, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Righteous", cursive;
   }
   .navColor {
@@ -92,11 +92,6 @@ nav {
     transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
     overflow: hidden;
 
-    &:hover {
-      background: rgb(27, 89, 255);
-      background: linear-gradient(90deg, rgba(27, 89, 255, 1) 0%, rgba(34, 199, 242, 1) 100%);
-      color: $whiteColor;
-    }
     .card-content {
       padding: 20px;
       height: 213px;

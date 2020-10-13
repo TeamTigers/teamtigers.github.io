@@ -13,7 +13,9 @@ body {
 
 nav .brand-logo {
   margin-left: 1rem;
-  color: #5914d8;
+  background: -webkit-linear-gradient(#0a61e4, #f06204);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Righteous", cursive;
 }
 
@@ -77,13 +79,6 @@ nav ul a {
   -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   overflow: hidden;
-}
-
-#services .card:hover {
-  background: #1b59ff;
-  background: -webkit-gradient(linear, left top, right top, from(#1b59ff), to(#22c7f2));
-  background: linear-gradient(90deg, #1b59ff 0%, #22c7f2 100%);
-  color: #ffffff;
 }
 
 #services .card .card-content {
