@@ -6,6 +6,8 @@ $(function () {
         .on('click tap', 'li a', () => {
             $('.sidenav').sidenav('close');
         });
+
+        
 });
 AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
