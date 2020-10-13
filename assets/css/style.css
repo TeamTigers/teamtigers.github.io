@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -14,8 +13,8 @@ body {
 
 nav .brand-logo {
   margin-left: 1rem;
-  color: #313030;
-  font-family: "Rowdies", cursive;
+  color: #5914d8;
+  font-family: "Righteous", cursive;
 }
 
 nav .navColor {
@@ -102,6 +101,49 @@ nav ul a {
   width: auto;
 }
 
+#why_us .featureList {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 30px;
+}
+
+#why_us .featureList .featureList_item {
+  padding-left: 32px;
+  font-size: 17px;
+  color: #19061c;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+#why_us .featureList .featureList_item::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://codeanywhere.com/img/icons/checkmark.svg") center no-repeat;
+  background-size: 22px;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
 #why_us .card {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -123,7 +165,7 @@ nav ul a {
   border-radius: 50%;
   position: absolute;
   background: #fc8404;
-  right: -5%;
+  right: -6%;
   top: -14%;
   overflow: hidden;
 }
@@ -134,8 +176,8 @@ nav ul a {
   border-radius: 50%;
   position: absolute;
   background: #fc8404;
-  right: -5%;
-  top: -10%;
+  right: -7%;
+  top: -7%;
   overflow: hidden;
 }
 
@@ -146,7 +188,7 @@ nav ul a {
   position: absolute;
   background: #fc8404;
   right: -6%;
-  top: -18%;
+  top: -30%;
   overflow: hidden;
 }
 
@@ -199,11 +241,6 @@ nav ul a {
 #team .card {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-#team .card:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px #b0b0b0;
-  box-shadow: 0px 0px 5px 1px #b0b0b0;
 }
 
 #team .card h5 {

@@ -39,13 +39,10 @@
     <link rel="stylesheet" href="assets/css/materializecss.min.css" />
     <!-- Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- Aos scroll effect -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Dev Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css" />
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
   </head>
   <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -86,9 +83,7 @@
       <div class="navbar-fixed">
         <nav class="nav-extended white z-depth-0">
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"
-              ><img src="assets/img/logo.png" alt="logo" id="logo" class="responsive-img"
-            /></a>
+            <a href="#!" class="brand-logo">TeamTigers</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons black-text">menu</i></a
             >
@@ -141,7 +136,7 @@
 
         <div id="home">
           <div class="row">
-            <div class="col s12 m6 l6 banner-section" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col s12 m6 l6 banner-section">
               <h1 class="banner-header">
                 We'll provide you the<br />
                 <span
@@ -285,13 +280,13 @@
                           <i class="material-icons left blue-text text-darken-4">beenhere</i>Hire top experts
                         </h5>
                         <p class="description details">We are a fully fledged freelancing team with -</p>
-                        <ul>
-                          <li class="description details"><span class="check">✓</span> UI/UX Researchers</li>
-                          <li class="description details"><span class="check">✓</span> Cool Frontend Devs</li>
-                          <li class="description details"><span class="check">✓</span> REST/GraphQL Programmers</li>
-                          <li class="description details"><span class="check">✓</span> DevOps Engineers</li>
-                          <li class="description details"><span class="check">✓</span> Machine Learning Engineer</li>
-                        </ul>
+                        <div class="featureList">
+                          <div class="featureList_item">UI/UX Researchers</div>
+                          <div class="featureList_item">Cool Frontend Devs</div>
+                          <div class="featureList_item">REST/GraphQL Programmers</div>
+                          <div class="featureList_item">DevOps Engineers</div>
+                          <div class="featureList_item">Machine Learning Engineer</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -303,18 +298,12 @@
                           <i class="material-icons left blue-text text-darken-4">group</i> We're supportive
                         </h5>
                         <p class="description details">We do care about your business. We ensure you -</p>
-                        <ul>
-                          <li class="description details">
-                            <span class="check">✓</span> Sustainable and easy to scale products
-                          </li>
-                          <li class="description details">
-                            <span class="check">✓</span> Affordable but high quality products
-                          </li>
-                          <li class="description details"><span class="check">✓</span> Delivery within dealines</li>
-                          <li class="description details">
-                            <span class="check">✓</span> Innovative and cutting-edge solutions
-                          </li>
-                        </ul>
+                        <div class="featureList">
+                          <div class="featureList_item">Sustainable and easy to scale products</div>
+                          <div class="featureList_item">Affordable but high quality products</div>
+                          <div class="featureList_item">Delivery within deadlines</div>
+                          <div class="featureList_item">Innovative and cutting-edge solutions</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -331,26 +320,18 @@
                           We don't just learn, we apply them too. We have highly dedicating Engineers who are constantly
                           participating in several competitions. Our members have active participation in -
                         </p>
-                        <ul>
-                          <li class="description details">
-                            <span class="check">✓</span> Grameenphone API Hackathon 2019
-                          </li>
-                          <li class="description details">
-                            <span class="check">✓</span> 18th Asian University President Forum
-                          </li>
-                          <li class="description details">
-                            <span class="check">✓</span> International Conference on Cyber Security and Computer Science
-                          </li>
-                          <li class="description details"><span class="check">✓</span> Microsoft Mumbai AI Gaming</li>
-                          <li class="description details">
-                            <span class="check">✓</span> International Flutter Hackathon
-                          </li>
-                          <li class="description details"><span class="check">✓</span> GitHub Actions Hackathon</li>
-                          <li class="description details">
-                            <span class="check">✓</span> Microsoft Azure Champions League
-                          </li>
-                          <li class="description details"><span class="check">✓</span> Hacktoberfest</li>
-                        </ul>
+                        <div class="featureList">
+                          <div class="featureList_item">Grameenphone API Hackathon 2019</div>
+                          <div class="featureList_item">18th Asian University President Forum</div>
+                          <div class="featureList_item">
+                            International Conference on Cyber Security and Computer Science
+                          </div>
+                          <div class="featureList_item">Microsoft Mumbai AI Gaming</div>
+                          <div class="featureList_item">International Flutter Hackathon</div>
+                          <div class="featureList_item">GitHub Actions Hackathon</div>
+                          <div class="featureList_item">Microsoft Azure Champions League</div>
+                          <div class="featureList_item">Hacktoberfest</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -381,7 +362,7 @@
             <h2 class="center">Projects</h2>
             <div class="row">
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
                   <div class="card-image">
                     <img src="assets/img/projects/coronainfobd.webp" alt="coronainfobd" />
                   </div>
@@ -405,76 +386,47 @@
                 </div>
               </div>
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
                   <div class="card-image">
-                    <img src="assets/img/projects/covid-map.png" alt="map" />
+                    <img src="assets/img/projects/Routine Explorer.webp" alt="no resume" />
                   </div>
                   <div class="card-content">
-                    <span class="card-title">COVID-19 BD MAP</span>
+                    <span class="card-title">Routine Explorer</span>
                     <p class="description">
-                      Visual of our country of the number of COVID-19 patients in every district. All district data is
-                      shown in map where anyone can sort data district wise. Also there is a table containing all
-                      districts.
+                      A class routine of DIU/SWE that helps finding class schedule from .xlsx file in a 6x6 Grid where
+                      student can find class schedule by selecting the routine version provided by the department.
                     </p>
                     <br />
-                    <a class="waves-effect btn btn-small" href="https://pro-js.github.io/bdCovidMap/" target="_blank"
+                    <a class="waves-effect btn btn-small" href="https://routine-explorer.herokuapp.com/" target="_blank"
                       ><i class="material-icons right">launch</i>Live Demo</a
                     >
-                    <a class="secondary-link" href="https://github.com/TeamTigers/bdCovidMap" target="_blank"
+                    <a class="secondary-link" href="https://github.com/shunjid/routine-explorer" target="_blank"
                       >Github repo</a
                     >
                   </div>
                 </div>
               </div>
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
                   <div class="card-image">
-                    <img src="assets/img/projects/reTone.webp" alt="retone" />
+                    <img src="assets/img/projects/cuntato.webp" alt="cuntato" />
                   </div>
                   <div class="card-content">
-                    <span class="card-title">ReTone</span>
+                    <span class="card-title">Cuntato</span>
                     <p class="description">
-                      ReTone is a color palette site built with React and React router. There is already a bunch of
-                      palettes available in the site. One can copy the color from the palette and create new custom
-                      palette.
+                      An easy and secured solution to get messages from contact form of static or dynamic websites and
+                      display all the messages in a table which can be downloaded as .csv, .xlsx and .pdf file.
                     </p>
                     <br />
-                    <a class="waves-effect btn btn-small" href="https://re-tone.herokuapp.com/" target="_blank"
+                    <a class="waves-effect btn btn-small" href="https://cuntato.herokuapp.com/" target="_blank"
                       ><i class="material-icons right">launch</i>Live Demo</a
                     >
-                    <a class="secondary-link" href="https://github.com/TeamTigers/re-tone" target="_blank"
-                      >Github repo</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
-                  <div class="card-image">
-                    <img src="assets/img/projects/Donate Plasma Light.webp" alt="donate_plasma" />
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Donate Plasma</span>
-                    <p class="description">
-                      "Donate Plasma" is a prototype apps built with flutter for the purpose of connecting COVID-19
-                      patients and the patients recently recovered from COVID-19 willing to donate their plasma.
-                    </p>
-                    <br />
-                    <a
-                      class="waves-effect btn btn-small"
-                      href="https://www.youtube.com/watch?v=WFMe6fyGj7M&feature=youtu.be"
-                      target="_blank"
-                      ><i class="material-icons right">launch</i>Live Video</a
-                    >
-                    <a class="secondary-link" href="https://github.com/TeamTigers/donate_plasma" target="_blank"
-                      >Github repo</a
-                    >
+                    <a class="secondary-link" href="https://github.com/pro-js/cuntato" target="_blank">Github repo</a>
                   </div>
                 </div>
               </div>
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
                   <div class="card-image">
                     <img src="assets/img/projects/Minisauras.webp" alt="donate_plasma" />
                   </div>
@@ -497,8 +449,57 @@
                   </div>
                 </div>
               </div>
+
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
+                  <div class="card-image">
+                    <img src="assets/img/projects/reTone.webp" alt="retone" />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">ReTone</span>
+                    <p class="description">
+                      ReTone is a color palette site built with React and React router. There is already a bunch of
+                      palettes available in the site. One can copy the color from the palette and create new custom
+                      palette.
+                    </p>
+                    <br />
+                    <a class="waves-effect btn btn-small" href="https://re-tone.herokuapp.com/" target="_blank"
+                      ><i class="material-icons right">launch</i>Live Demo</a
+                    >
+                    <a class="secondary-link" href="https://github.com/TeamTigers/re-tone" target="_blank"
+                      >Github repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card rounded">
+                  <div class="card-image">
+                    <img src="assets/img/projects/Donate Plasma Light.webp" alt="donate_plasma" />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Donate Plasma</span>
+                    <p class="description">
+                      "Donate Plasma" is a prototype apps built with flutter for the purpose of connecting COVID-19
+                      patients and the patients recently recovered from COVID-19 willing to donate their plasma.
+                    </p>
+                    <br />
+                    <a
+                      class="waves-effect btn btn-small"
+                      href="https://www.youtube.com/watch?v=WFMe6fyGj7M&feature=youtu.be"
+                      target="_blank"
+                      ><i class="material-icons right">launch</i>Live Video</a
+                    >
+                    <a class="secondary-link" href="https://github.com/TeamTigers/donate_plasma" target="_blank"
+                      >Github repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4">
+                <div class="card rounded">
                   <div class="card-image">
                     <img src="assets/img/projects/NoResume.webp" alt="no resume" />
                   </div>
@@ -517,42 +518,24 @@
                 </div>
               </div>
               <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
+                <div class="card rounded">
                   <div class="card-image">
-                    <img src="assets/img/projects/Routine Explorer.webp" alt="no resume" />
+                    <img src="assets/img/projects/covid-map.png" alt="map" />
                   </div>
                   <div class="card-content">
-                    <span class="card-title">Routine Explorer</span>
+                    <span class="card-title">COVID-19 BD MAP</span>
                     <p class="description">
-                      A class routine of DIU/SWE that helps finding class schedule from .xlsx file in a 6x6 Grid where
-                      student can find class schedule by selecting the routine version provided by the department.
+                      Visual of our country of the number of COVID-19 patients in every district. All district data is
+                      shown in map where anyone can sort data district wise. Also there is a table containing all
+                      districts.
                     </p>
                     <br />
-                    <a class="waves-effect btn btn-small" href="https://routine-explorer.herokuapp.com/" target="_blank"
+                    <a class="waves-effect btn btn-small" href="https://pro-js.github.io/bdCovidMap/" target="_blank"
                       ><i class="material-icons right">launch</i>Live Demo</a
                     >
-                    <a class="secondary-link" href="https://github.com/shunjid/routine-explorer" target="_blank"
+                    <a class="secondary-link" href="https://github.com/TeamTigers/bdCovidMap" target="_blank"
                       >Github repo</a
                     >
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6 l4">
-                <div class="card rounded z-depth-3">
-                  <div class="card-image">
-                    <img src="assets/img/projects/cuntato.webp" alt="cuntato" />
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title">Cuntato</span>
-                    <p class="description">
-                      An easy and secured solution to get messages from contact form of static or dynamic websites and
-                      display all the messages in a table which can be downloaded as .csv, .xlsx and .pdf file.
-                    </p>
-                    <br />
-                    <a class="waves-effect btn btn-small" href="https://cuntato.herokuapp.com/" target="_blank"
-                      ><i class="material-icons right">launch</i>Live Demo</a
-                    >
-                    <a class="secondary-link" href="https://github.com/pro-js/cuntato" target="_blank">Github repo</a>
                   </div>
                 </div>
               </div>
@@ -666,11 +649,11 @@
           <div id="team">
             <h2 class="center">Team</h2>
             <div class="row">
-              <div class="col s12 m4 l3">
+              <div class="col s12 m4 l4">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/shunjid.jpg" alt="shunjid" class="circle responsive-img" />
+                      <img src="assets/img/team/shunjid.webp" alt="shunjid" class="circle responsive-img" />
                       <h6 class="name">Shunjid Rahman Showrov</h6>
                       <span
                         ><a href="https://www.facebook.com/shunjid" target="_blank"
@@ -690,11 +673,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col s12 m4 l3">
+              <div class="col s12 m4 l4">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/himel.jpg" alt="himel" class="circle responsive-img" />
+                      <img src="assets/img/team/himel.webp" alt="himel" class="circle responsive-img" />
                       <h6 class="name">Zubayer Himel</h6>
                       <span
                         ><a href="https://www.facebook.com/zubayerhimel0" target="_blank"
@@ -715,11 +698,11 @@
                 </div>
               </div>
 
-              <div class="col s12 m4 l3">
+              <div class="col s12 m4 l4">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/fahad.jpg" alt="fahad" class="circle responsive-img" />
+                      <img src="assets/img/team/fahad.webp" alt="fahad" class="circle responsive-img" />
                       <h6 class="name">Shah Fahad Hossain</h6>
                       <span
                         ><a href="https://www.facebook.com/shahfahad.hossain" target="_blank"
@@ -739,12 +722,13 @@
                   </div>
                 </div>
               </div>
-
+            </div>
+            <div class="row">
               <div class="col s12 m4 l3">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/sheble.jpg" alt="sheble" class="circle responsive-img" />
+                      <img src="assets/img/team/sheble.webp" alt="sheble" class="circle responsive-img" />
                       <h6 class="name">Abu Sufian Sheble</h6>
                       <span
                         ><a href="https://www.facebook.com/hm.sheble" target="_blank"
@@ -764,13 +748,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m4 l4">
+              <div class="col s12 m4 l3">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/anindo.jpg" alt="anindo" class="circle responsive-img" />
+                      <img src="assets/img/team/anindo.webp" alt="anindo" class="circle responsive-img" />
                       <h6 class="name">Anindo Shahriar</h6>
                       <span
                         ><a href="https://www.facebook.com/anindo.shahriar.97" target="_blank"
@@ -790,11 +772,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col s12 m4 l4">
+              <div class="col s12 m4 l3">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/zihadul.jpg" alt="zihadul" class="circle responsive-img" />
+                      <img src="assets/img/team/zihadul.webp" alt="zihadul" class="circle responsive-img" />
                       <h6 class="name">Zihadul Islam</h6>
                       <span
                         ><a href="https://www.facebook.com/zuizihad" target="_blank"
@@ -814,11 +796,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col s12 m4 l4">
+              <div class="col s12 m4 l3">
                 <div class="card rounded">
                   <div class="card-content">
                     <div class="center-align">
-                      <img src="assets/img/team/jinnatul.jpg" alt="jinnatul" class="circle responsive-img" />
+                      <img src="assets/img/team/morol.webp" alt="jinnatul" class="circle responsive-img" />
                       <h6 class="name">Jinnatul Islam Morol</h6>
                       <span
                         ><a href="https://www.facebook.com/mdjinnatul.islam" target="_blank"
@@ -898,16 +880,18 @@
       </div>
 
       <!-- Footer section -->
-      <footer class="page-footer grey lighten-3">
+      <footer class="page-footer grey lighten-2">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
               <h5 class="black-text">TeamTigers</h5>
-              <p class="grey-text text-darken-2">Lets build your dream together</p>
+              <p class="grey-text text-darken-4">Lets build your dream together</p>
             </div>
             <div class="col l4 offset-l2 s12">
               <ul>
-                <li><a class="grey-text text-darken-2" href="">Github</a></li>
+                <li>
+                  <a class="grey-text text-darken-2" href="http://github.com/teamtigers" target="_blank">Github</a>
+                </li>
                 <li>
                   <a class="grey-text text-darken-2" href="https://www.linkedin.com/company/67138108/" target="_blank"
                     >LinkedIn</a
@@ -933,14 +917,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Materialize js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Aos scroll effect -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Plugin -->
     <script src="assets/js/plugin.js"></script>
     <!-- Animated text -->
     <script src="assets/js/text-animation.js"></script>
     <!-- Contact form -->
     <script src="assets/js/contact-form.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
   </body>
 </html>
