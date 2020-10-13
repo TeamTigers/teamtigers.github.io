@@ -77,6 +77,7 @@ nav ul a {
   border-top: 6px solid #4a148c;
   -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  overflow: hidden;
 }
 
 #services .card:hover {
@@ -162,6 +163,14 @@ nav ul a {
   transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+#activities .card {
+  overflow: hidden;
+}
+
+#activities .card-content {
+  height: 230px;
 }
 
 #activities .icon-color {
