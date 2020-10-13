@@ -94,6 +94,7 @@ nav ul a {
 
 #services .card .card-content h5 {
   font-weight: 200;
+  word-wrap: break-word;
 }
 
 #services .card .services-img {
