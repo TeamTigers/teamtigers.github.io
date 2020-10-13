@@ -113,6 +113,10 @@ nav ul a {
   box-shadow: 0px 0px 5px 1px #b0b0b0;
 }
 
+#why_us .card:hover .check {
+  color: #fc8404;
+}
+
 #why_us .card:hover .card-design {
   width: 100px;
   height: 100px;
