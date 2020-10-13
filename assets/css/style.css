@@ -40,11 +40,7 @@ nav ul a {
 }
 
 .section {
-  height: 100vh;
-}
-
-.mt10 {
-  margin-top: 10rem;
+  margin-bottom: 10em;
 }
 
 #home .banner-header {
@@ -177,10 +173,6 @@ nav ul a {
   border-radius: 6px;
 }
 
-#team {
-  margin-top: 8rem;
-}
-
 #team .name {
   font-size: 1.3em;
 }
@@ -193,6 +185,11 @@ nav ul a {
 #team .card {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+#team .card:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px #b0b0b0;
+  box-shadow: 0px 0px 5px 1px #b0b0b0;
 }
 
 #team .card h5 {
@@ -391,6 +388,9 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .section {
+    margin-bottom: 3em;
+  }
   .customContainer {
     margin-left: 1rem;
     margin-right: 1rem;
