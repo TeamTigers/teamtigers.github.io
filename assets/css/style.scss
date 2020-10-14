@@ -89,8 +89,8 @@ nav {
 
 #services {
   .card {
-    border-top: 6px solid #4a148c;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    // border-top: 6px solid $blueColor;
+    transition: 0.5s;
     overflow: hidden;
 
     .card-content {
@@ -101,11 +101,25 @@ nav {
         font-weight: 200;
         word-wrap: break-word;
       }
+
+      .material-icons {
+        font-size: 5em;
+        color: $blueColor;
+      }
     }
 
     .services-img {
       height: 80px;
       width: auto;
+    }
+
+    &:hover {
+      background-color: $blueColor;
+      color: $whiteColor;
+
+      .material-icons {
+        color: $whiteColor;
+      }
     }
   }
 }
@@ -431,5 +445,20 @@ h2 {
   }
   .banner {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #projects {
+    .card-content {
+      height: 275px;
+    }
+  }
+  #services {
+    .card-content {
+      span {
+        font-size: 1.3rem !important;
+      }
+    }
   }
 }

@@ -78,9 +78,8 @@ nav ul a {
 }
 
 #services .card {
-  border-top: 6px solid #4a148c;
-  -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   overflow: hidden;
 }
 
@@ -94,9 +93,23 @@ nav ul a {
   word-wrap: break-word;
 }
 
+#services .card .card-content .material-icons {
+  font-size: 5em;
+  color: #1a73e9;
+}
+
 #services .card .services-img {
   height: 80px;
   width: auto;
+}
+
+#services .card:hover {
+  background-color: #1a73e9;
+  color: #ffffff;
+}
+
+#services .card:hover .material-icons {
+  color: #ffffff;
 }
 
 #why_us .featureList {
@@ -424,6 +437,15 @@ h2 {
   }
   .banner {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #projects .card-content {
+    height: 275px;
+  }
+  #services .card-content span {
+    font-size: 1.3rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
