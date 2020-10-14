@@ -23,10 +23,7 @@ body {
 nav {
   .brand-logo {
     margin-left: 1rem;
-    // color: #733add;
-    background: -webkit-linear-gradient(rgb(10, 97, 228), rgb(240, 98, 4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(57, 125, 228);
     font-family: "Righteous", cursive;
   }
   .navColor {
@@ -269,7 +266,11 @@ nav {
   }
 }
 #contact_us {
-  margin-top: 8rem;
+  .bal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   h6 {
     color: $blueColor;
   }
