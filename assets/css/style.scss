@@ -104,7 +104,18 @@ nav {
 
       .material-icons {
         font-size: 5em;
-        color: $blueColor;
+      }
+      .web {
+        color: #4285f4;
+      }
+      .phone {
+        color: #db4437;
+      }
+      .color {
+        color: #f4b400;
+      }
+      .consult {
+        color: #0f9d58;
       }
     }
 
@@ -112,18 +123,8 @@ nav {
       height: 80px;
       width: auto;
     }
-
-    &:hover {
-      background-color: $blueColor;
-      color: $whiteColor;
-
-      .material-icons {
-        color: $whiteColor;
-      }
-    }
   }
 }
-
 #why_us {
   .featureList {
     display: -webkit-box;

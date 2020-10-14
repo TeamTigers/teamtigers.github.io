@@ -95,21 +95,27 @@ nav ul a {
 
 #services .card .card-content .material-icons {
   font-size: 5em;
-  color: #1a73e9;
+}
+
+#services .card .card-content .web {
+  color: #4285f4;
+}
+
+#services .card .card-content .phone {
+  color: #db4437;
+}
+
+#services .card .card-content .color {
+  color: #f4b400;
+}
+
+#services .card .card-content .consult {
+  color: #0f9d58;
 }
 
 #services .card .services-img {
   height: 80px;
   width: auto;
-}
-
-#services .card:hover {
-  background-color: #1a73e9;
-  color: #ffffff;
-}
-
-#services .card:hover .material-icons {
-  color: #ffffff;
 }
 
 #why_us .featureList {
