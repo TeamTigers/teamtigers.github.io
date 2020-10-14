@@ -17,6 +17,11 @@ nav .brand-logo {
   font-family: "Righteous", cursive;
 }
 
+nav .brand-logo img {
+  height: 2.5rem;
+  width: 10rem;
+}
+
 nav .navColor {
   background-color: transparent;
 }
@@ -150,39 +155,6 @@ nav ul a {
 
 #why_us .card:hover .check {
   color: #fc8404;
-}
-
-#why_us .card:hover .card-design {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  background: #fc8404;
-  right: -6%;
-  top: -14%;
-  overflow: hidden;
-}
-
-#why_us .card:hover .card-design2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  background: #fc8404;
-  right: -7%;
-  top: -7%;
-  overflow: hidden;
-}
-
-#why_us .card:hover .card-design3 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  background: #fc8404;
-  right: -6%;
-  top: -30%;
-  overflow: hidden;
 }
 
 #projects .card {

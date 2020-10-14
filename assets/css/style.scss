@@ -25,6 +25,10 @@ nav {
     margin-left: 1rem;
     color: rgb(57, 125, 228);
     font-family: "Righteous", cursive;
+    img {
+      height: 2.5rem;
+      width: 10rem;
+    }
   }
   .navColor {
     background-color: transparent;
@@ -158,36 +162,16 @@ nav {
         color: $orangeColor;
       }
 
-      .card-design {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        background: $orangeColor;
-        right: -6%;
-        top: -14%;
-        overflow: hidden;
-      }
-      .card-design2 {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        background: $orangeColor;
-        right: -7%;
-        top: -7%;
-        overflow: hidden;
-      }
-      .card-design3 {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        background: $orangeColor;
-        right: -6%;
-        top: -30%;
-        overflow: hidden;
-      }
+      // .card-design {
+      //   width: 500px;
+      //   height: 500px;
+      //   border-radius: 50%;
+      //   position: absolute;
+      //   background: #f09a3e;
+      //   right: 10%;
+      //   top: 10%;
+      //   overflow: hidden;
+      // }
     }
   }
 }
