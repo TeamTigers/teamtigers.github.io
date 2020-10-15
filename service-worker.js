@@ -3,6 +3,7 @@ const precacheResources = [
   "/",
   "index.html",
   "assets/css/style.css",
+  "materializecss.min.css",
   "assets/img/TeamTigers_2.webp",
   "assets/img/teamtigers.jpg",
   "assets/img/svg/banner.svg",
