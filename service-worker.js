@@ -4,6 +4,8 @@ const precacheResources = [
   "index.html",
   "assets/css/style.css",
   "assets/css/materializecss.min.css",
+  "assets/css/slick-theme.css",
+  "assets/css/slick.css",
   "assets/img/TeamTigers_2.webp",
   "assets/img/teamtigers.jpg",
   "assets/img/svg/banner.svg",

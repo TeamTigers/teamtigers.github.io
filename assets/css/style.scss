@@ -118,10 +118,13 @@ nav {
         color: #0f9d58;
       }
     }
-
-    .services-img {
-      height: 80px;
-      width: auto;
+    &:hover {
+      i {
+        padding-left: 0.5rem;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        text-shadow: 2px 2px 6px #b0bec5;
+      }
     }
   }
 }
