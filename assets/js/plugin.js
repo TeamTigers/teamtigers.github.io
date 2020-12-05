@@ -1,7 +1,4 @@
 $(function () {
-  $(".tabs").tabs();
-  $(".collapsible").collapsible();
-  $(".carousel").carousel();
   $(".sidenav")
     .sidenav()
     .on("click tap", "li a", () => {
