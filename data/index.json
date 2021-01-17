@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Shunjid Rahman Showrov",
+        "dp": "../assets/img/team/shunjid.webp",
+        "stack": {
+            "frontend": "Vue.js, Vuex, Vuetify, jQuery, Materialize",
+            "backend": ".NET Core 3.1 (REST, MVC), EF Core (ORM)",
+            "database": "SQL Server, MySQL",
+            "devops": "GitHub Actions",
+            "learning": "Progressive Web Apps, Webpack, ES6 Functional Programming, React"
+        }
+    },
+    {
+        "name": "Zinnatul Islam Morol",
+        "dp": "../assets/img/team/morol.webp",
+        "stack": {
+            "frontend": "jQuery, Materialize, ejs",
+            "backend": "Node.js (Express, Nest.js) JS/TS",
+            "database": "NoSQL(MongoDB), SQL server",
+            "devops": "GitHub Actions",
+            "learning": "Webpack, React, PostgreSQL"
+        }
+    },
+    {
+        "name": "Zubayer Alam",
+        "dp": "../assets/img/team/himel.webp",
+        "stack": {
+            "frontend": "React.js, Vue.js, Vuex, Redux, Materialize, jQuery, Tailwind",
+            "user interface": "Figma, Adobe XD",
+            "devops": "GitHub Actions",
+            "learning": "React.js"
+        }
+    },
+    {
+        "name": "Abu Sufian Shibli",
+        "dp": "../assets/img/team/sheble.webp",
+        "stack": {
+            "frontend": "Flutter, Materialize",
+            "backend": "Django",
+            "database": "SQL Server, MySQL",
+            "devops": "GitHub Actions",
+            "learning": "Django (REST API)"
+        }
+    },
+    {
+        "name": "Shah Fahad Hossain",
+        "dp": "../assets/img/team/fahad.webp",
+        "stack": {
+            "frontend": "Materialize",
+            "backend": "Django",
+            "database": "SQL Server",
+            "learning": "Django (REST API)"
+        }
+    }
+]
