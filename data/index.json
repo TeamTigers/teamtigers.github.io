@@ -18,7 +18,7 @@
             "backend": "Node.js (Express, Nest.js) JS/TS",
             "database": "NoSQL(MongoDB), SQL server",
             "devops": "GitHub Actions",
-            "learning": "Webpack, React, PostgreSQL"
+            "learning": "Webpack, React, PostgreSQL, ES6 Functional Programming"
         }
     },
     {
@@ -47,10 +47,11 @@
         "name": "Shah Fahad Hossain",
         "dp": "../assets/img/team/fahad.webp",
         "stack": {
-            "frontend": "Materialize",
-            "backend": "Django",
-            "database": "SQL Server",
-            "learning": "Django (REST API)"
+            "frontend": "jQuery,ajax",
+            "backend": "Django,rest API ",
+            "database": "SQL Server, MySQL",
+            "devops": "GitHub Actions",
+            "learning": "Implementation of ML and DL in a project"
         }
     }
 ]
