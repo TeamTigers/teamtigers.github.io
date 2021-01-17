@@ -7,7 +7,7 @@
             "backend": ".NET Core 3.1 (REST, MVC), EF Core (ORM)",
             "database": "SQL Server, MySQL",
             "devops": "GitHub Actions",
-            "learning": "Progressive Web Apps, Webpack, ES6 Functional Programming, React"
+            "learning": "Nuxt.js, Progressive Web Apps, Webpack, ES6 Functional Programming"
         }
     },
     {
