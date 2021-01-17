@@ -22,13 +22,14 @@
         }
     },
     {
-        "name": "Zubayer Alam",
+        "name": "Zubayer Himel",
         "dp": "../assets/img/team/himel.webp",
         "stack": {
-            "frontend": "React.js, Vue.js, Vuex, Redux, Materialize, jQuery, Tailwind",
-            "user interface": "Figma, Adobe XD",
+            "frontend": "Vue.js, Vuex, Vuetify, jQuery, Materialize, React.JS, Context API, Material-UI",
+            "backend": "NodeJS, Express, MeteorJS",
+            "database": "SQL Server, MongoDB",
             "devops": "GitHub Actions",
-            "learning": "React.js"
+            "learning": "Progressive Web Apps, Redux, Next.JS"
         }
     },
     {
