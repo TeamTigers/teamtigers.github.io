@@ -35,10 +35,6 @@ $(() => {
 
 const DEVCARD = () => {
   return `
-    <div class="row center-align">
-        <br>
-        <h4>Developers and Skills</h4>
-    </div>
     <div class="row">
         <ul class="collection" id="collection"></ul>
     </div>
