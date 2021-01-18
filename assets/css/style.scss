@@ -162,7 +162,8 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("https://codeanywhere.com/img/icons/checkmark.svg") center no-repeat;
+        background: url("https://codeanywhere.com/img/icons/checkmark.svg")
+          center no-repeat;
         background-size: 22px;
         background-size: contain;
         position: absolute;
@@ -463,6 +464,7 @@ h2 {
       height: 275px;
     }
   }
+
   #services {
     .card-content {
       span {
