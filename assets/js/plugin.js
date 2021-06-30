@@ -5,6 +5,10 @@ $(function () {
       $(".sidenav").sidenav("close");
     });
 
+  $(document).ready(function () {
+    $(".tooltipped").tooltip();
+  });
+
   $(".one_card").slick({
     infinite: true,
     speed: 500,
@@ -15,5 +19,8 @@ $(function () {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  window.setTimeout(document.querySelector("#banner-svg").classList.add("animated"), 1000);
+  window.setTimeout(
+    document.querySelector("#banner-svg").classList.add("animated"),
+    1000
+  );
 });
